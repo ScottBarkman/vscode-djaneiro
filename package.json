@@ -1,7 +1,7 @@
 {
     "name": "vscode-djaneiro",
-    "displayName": "vscode-djaneiro",
-    "description": "Django snippets for vscode (Cloned from Djaneiro for Sublime Text)",
+    "displayName": "Djaneiro - Django Snippets",
+    "description": "A collection of snippets for django templates, models, views, fields & forms. Ported from Djaneiro for SublimeText",
     "version": "1.0.0",
     "publisher": "thebarkman",
     "engines": {
