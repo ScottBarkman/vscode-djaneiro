@@ -1,0 +1,182 @@
+{
+	"mauto": {
+		"prefix": "mauto",
+		"body": "${1:FIELDNAME} = models.AutoField($2)",
+		"description": "AutoField (mauto)",
+		"scope": "source.python"
+	},
+	"mbigint": {
+		"prefix": "mbigint",
+		"body": "${1:FIELDNAME} = models.BigIntegerField($2)",
+		"description": "BigIntegerField (mbigint)",
+		"scope": "source.python"
+	},
+	"mbool": {
+		"prefix": "mbool",
+		"body": "${1:FIELDNAME} = models.BooleanField($2)",
+		"description": "BooleanField (mbool)",
+		"scope": "source.python"
+	},
+	"mchar": {
+		"prefix": "mchar",
+		"body": "${1:FIELDNAME} = models.CharField($2, max_length=${3:50})",
+		"description": "CharField (mchar)",
+		"scope": "source.python"
+	},
+	"mcoseint": {
+		"prefix": "mcoseint",
+		"body": "${1:FIELDNAME} = models.CommaSeparatedIntegerField($2)",
+		"description": "CommaSeparatedIntegerField (mcoseint)",
+		"scope": "source.python"
+	},
+	"mdate": {
+		"prefix": "mdate",
+		"body": "${1:FIELDNAME} = models.DateField($2)",
+		"description": "DateField (mdate)",
+		"scope": "source.python"
+	},
+	"mdatetime": {
+		"prefix": "mdatetime",
+		"body": "${1:FIELDNAME} = models.DateTimeField($2)",
+		"description": "DateTimeField (mdatetime)",
+		"scope": "source.python"
+	},
+	"mdecimal": {
+		"prefix": "mdecimal",
+		"body": "${1:FIELDNAME} = models.DecimalField($2, max_digits=${3:5}, decimal_places=${4:2})",
+		"description": "DecimalField (mdecimal)",
+		"scope": "source.python"
+	},
+	"mduration": {
+		"prefix": "mduration",
+		"body": "${1:FIELDNAME} = models.DurationField($2)",
+		"description": "DurationField (mduration)",
+		"scope": "source.python"
+	},
+	"memail": {
+		"prefix": "memail",
+		"body": "${1:FIELDNAME} = models.EmailField($2)",
+		"description": "EmailField (memail)",
+		"scope": "source.python"
+	},
+	"mfile": {
+		"prefix": "mfile",
+		"body": "${1:FIELDNAME} = models.FileField($2)",
+		"description": "FileField (mfile)",
+		"scope": "source.python"
+	},
+	"mfilepath": {
+		"prefix": "mfilepath",
+		"body": "${1:FIELDNAME} = models.FilePathField($2)",
+		"description": "FilePathField (mfilepath)",
+		"scope": "source.python"
+	},
+	"mfloat": {
+		"prefix": "mfloat",
+		"body": "${1:FIELDNAME} = models.FloatField($2)",
+		"description": "FloatField (mfloat)",
+		"scope": "source.python"
+	},
+	"fk": {
+		"prefix": "fk",
+		"body": "${1:FIELDNAME} = models.ForeignKey($2)",
+		"description": "ForeignKey (fk)",
+		"scope": "source.python"
+	},
+	"mip": {
+		"prefix": "mip",
+		"body": "${1:FIELDNAME} = models.IPAddressField($2)",
+		"description": "IPAddressField (mip)",
+		"scope": "source.python"
+	},
+	"mimg": {
+		"prefix": "mimg",
+		"body": "${1:FIELDNAME} = models.ImageField($2)",
+		"description": "ImageField (mimg)",
+		"scope": "source.python"
+	},
+	"mint": {
+		"prefix": "mint",
+		"body": "${1:FIELDNAME} = models.IntegerField($2)",
+		"description": "IntegerField (mint)",
+		"scope": "source.python"
+	},
+	"m2m": {
+		"prefix": "m2m",
+		"body": "${1:FIELDNAME} = models.ManyToManyField($2)",
+		"description": "ManyToManyField (m2m)",
+		"scope": "source.python"
+	},
+	"mnullbool": {
+		"prefix": "mnullbool",
+		"body": "${1:FIELDNAME} = models.NullBooleanField($2)",
+		"description": "NullBooleanField (mnullbool)",
+		"scope": "source.python"
+	},
+	"o2o": {
+		"prefix": "o2o",
+		"body": "${1:FIELDNAME} = models.OneToOneField($2)",
+		"description": "OneToOneField (o2o)",
+		"scope": "source.python"
+	},
+	"mphone": {
+		"prefix": "mphone",
+		"body": "${1:FIELDNAME} = models.PhoneNumberField($2)",
+		"description": "PhoneNumberField (mphone)",
+		"scope": "source.python"
+	},
+	"mposint": {
+		"prefix": "mposint",
+		"body": "${1:FIELDNAME} = models.PositiveIntegerField($2)",
+		"description": "PositiveIntegerField (mposint)",
+		"scope": "source.python"
+	},
+	"mpossmallint": {
+		"prefix": "mpossmallint",
+		"body": "${1:FIELDNAME} = models.PositiveSmallIntegerField($2)",
+		"description": "PositiveSmallIntegerField (mpossmallint)",
+		"scope": "source.python"
+	},
+	"mslug": {
+		"prefix": "mslug",
+		"body": "${1:FIELDNAME} = models.SlugField($2)",
+		"description": "SlugField (mslug)",
+		"scope": "source.python"
+	},
+	"msmallint": {
+		"prefix": "msmallint",
+		"body": "${1:FIELDNAME} = models.SmallIntegerField($2)",
+		"description": "SmallIntegerField (msmallint)",
+		"scope": "source.python"
+	},
+	"mtext": {
+		"prefix": "mtext",
+		"body": "${1:FIELDNAME} = models.TextField($2)",
+		"description": "TextField (mtext)",
+		"scope": "source.python"
+	},
+	"mtime": {
+		"prefix": "mtime",
+		"body": "${1:FIELDNAME} = models.TimeField($2)",
+		"description": "TimeField (mtime)",
+		"scope": "source.python"
+	},
+	"murl": {
+		"prefix": "murl",
+		"body": "${1:FIELDNAME} = models.URLField($2)",
+		"description": "URLField (murl)",
+		"scope": "source.python"
+	},
+	"musstate": {
+		"prefix": "musstate",
+		"body": "${1:FIELDNAME} = models.USStateField($2)",
+		"description": "USStateField (musstate)",
+		"scope": "source.python"
+	},
+	"mxml": {
+		"prefix": "mxml",
+		"body": "${1:FIELDNAME} = models.XMLField($2)",
+		"description": "XMLField (mxml)",
+		"scope": "source.python"
+	}
+}

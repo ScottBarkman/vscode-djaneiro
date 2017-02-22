@@ -1,0 +1,32 @@
+{
+	"ipdb": {
+		"prefix": "ipdb",
+		"body": "import ipdb; ipdb.set_trace()",
+		"description": "ipdb debug tool",
+		"scope": "source.python"
+	},
+	"npdb": {
+		"prefix": "npdb",
+		"body": "from nose.tools import set_trace; set_trace()",
+		"description": "nose pdb debug tool",
+		"scope": "source.python"
+	},
+	"pdb": {
+		"prefix": "pdb",
+		"body": "import pdb; pdb.set_trace()",
+		"description": "pdb debug tool",
+		"scope": "source.python"
+	},
+	"traceback": {
+		"prefix": "traceback",
+		"body": "import traceback; traceback.print_exc();",
+		"description": "traceback print exception",
+		"scope": "source.python"
+	},
+	"utfc": {
+		"prefix": "utfc",
+		"body": "# -*- coding: utf-8 -*-",
+		"description": "coding: utf-8",
+		"scope": "source.python"
+	}
+}

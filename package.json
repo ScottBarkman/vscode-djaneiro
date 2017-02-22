@@ -1,0 +1,49 @@
+{
+    "name": "vscode-djaneiro",
+    "displayName": "vscode-djaneiro",
+    "description": "Django snippets for vscode (Cloned from Djaneiro for Sublime Text)",
+    "version": "1.0.0",
+    "publisher": "thebarkman",
+    "engines": {
+        "vscode": "^1.5.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "python",
+                "path": "./snippets/forms/classes.json"
+            },
+            {
+                "language": "python",
+                "path": "./snippets/forms/fields.json"
+            },
+            {
+                "language": "python",
+                "path": "./snippets/models/classes.json"
+            },
+            {
+                "language": "python",
+                "path": "./snippets/models/fields.json"
+            },
+            {
+                "language": "python",
+                "path": "./snippets/python/classes.json"
+            },
+            {
+                "language": "python",
+                "path": "./snippets/python/python.json"
+            },
+            {
+                "language": "python",
+                "path": "./snippets/views/views.json"
+            },
+            {
+                "language": "html",
+                "path": "./snippets/templates/html.json"
+            }
+        ]
+    }
+}

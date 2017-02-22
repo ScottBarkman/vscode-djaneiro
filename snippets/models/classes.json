@@ -1,0 +1,14 @@
+{
+	"Model_full": {
+		"prefix": "Model_full",
+		"body": "\r\nclass ${1:MODELNAME}(models.Model):\r\n    ${2:# TODO: Define fields here}\r\n\r\n    class Meta:\r\n        verbose_name = \"$1\"\r\n        verbose_name_plural = \"$1s\"\r\n\r\n    def __str__(self):\r\n        pass\r\n\r\n    def save(self):\r\n        pass\r\n\r\n    @models.permalink\r\n    def get_absolute_url(self):\r\n        return ('')\r\n\r\n    ${3:# TODO: Define custom methods here}\r\n\r\n    ",
+		"description": "Model (full)",
+		"scope": "source.python"
+	},
+	"Model": {
+		"prefix": "Model",
+		"body": "\r\nclass ${1:MODELNAME}(models.Model):\r\n\r\n    class Meta:\r\n        verbose_name = \"$1\"\r\n        verbose_name_plural = \"$1s\"\r\n\r\n    def __str__(self):\r\n        pass\r\n    ",
+		"description": "Model",
+		"scope": "source.python"
+	}
+}

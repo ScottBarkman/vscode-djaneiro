@@ -1,0 +1,14 @@
+{
+	"Form": {
+		"prefix": "Form",
+		"body": "\r\nclass ${1:FORMNAME}(forms.Form):\r\n    ${2:# TODO: Define form fields here}\r\n    ",
+		"description": "Form",
+		"scope": "source.python"
+	},
+	"ModelForm": {
+		"prefix": "ModelForm",
+		"body": "\r\nclass ${1:MODELNAME}Form(forms.ModelForm):\r\n    class Meta:\r\n        model = $1\r\n        fields = ('$2',)\r\n    ",
+		"description": "ModelForm",
+		"scope": "source.python"
+	}
+}

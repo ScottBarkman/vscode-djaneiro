@@ -1,0 +1,8 @@
+{
+	"__init__": {
+		"prefix": "__init__",
+		"body": "\r\ndef __init__(self, *args, **kwargs):\r\n    super(${1:CLASS_NAME}, self).__init__(*args, **kwargs)\r\n",
+		"description": "",
+		"scope": "source.python"
+	}
+}
