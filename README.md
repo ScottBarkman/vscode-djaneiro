@@ -1,5 +1,5 @@
 # Django snippets for Visual Studio Code
-A collection of snippets for django templates, models, views, fields & forms.
+A collection of snippets for django templates, models, views, fields & forms. Quit typing so much, will ya?
 
 Initially ported to vscode from [Djaneiro for Sublime Text 2/3](https://github.com/squ1b3r/Djaneiro)
 
