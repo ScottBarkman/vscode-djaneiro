@@ -17,8 +17,8 @@ If you'd like to contribute to this collection of snippets, feel free to [submit
 | csrf           | ``{% csrf_token %}``                                  |
 | cycle          | ``{% cycle %}``                                       |
 | debug          | ``{% debug %}``                                       |
-| ext            | ``{% extends "" %}``                                  |
-| extends        | ``{% extends "" %}``                                  |
+| ext            | ``{% extends '' %}``                                  |
+| extends        | ``{% extends '' %}``                                  |
 | filter         | ``{% filter %} {% endfilter %}``                      |
 | firstof        | ``{% firstof %}``                                     |
 | for            | ``{% for in %} {% endfor %}``                         |
@@ -33,7 +33,7 @@ If you'd like to contribute to this collection of snippets, feel free to [submit
 | inc            | ``{% include %}``                                     |
 | include        | ``{% include %}``                                     |
 | load           | ``{% load %}``                                        |
-| now            | ``{% now "" %}``                                      |
+| now            | ``{% now '' %}``                                      |
 | regroup        | ``{% regroup by as %}``                               |
 | spaceless      | ``{% spaceless %} {% endspaceless %}``                |
 | ssi            | ``{% ssi %}``                                         |
