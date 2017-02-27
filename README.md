@@ -154,6 +154,12 @@ If you'd like to contribute to this collection of snippets, feel free to [submit
 | traceback    | ``import traceback; traceback.print_exc();``      |
 | utfc         | ``coding: utf-8 ``                                |
 
+### 1.1.6
+
+Fix admin inline spacing
+Change from double quotes to single quotes in template tags
+Updated logo
+
 ### 1.0.0
 
 Initial port of Djaneiro for Visual Studio Code
