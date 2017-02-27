@@ -61,13 +61,13 @@
 	},
 	"ext": {
 		"prefix": "ext",
-		"body": "{% extends \"${1:$SELECTION}\" %}",
+		"body": "{% extends '${1:$SELECTION}' %}",
 		"description": "extends (ext)",
 		"scope": "text.html.django"
 	},
 	"extends": {
 		"prefix": "extends",
-		"body": "{% extends \"${1:$SELECTION}\" %}",
+		"body": "{% extends '${1:$SELECTION}' %}",
 		"description": "extends",
 		"scope": "text.html.django"
 	},
@@ -157,13 +157,13 @@
 	},
 	"inc": {
 		"prefix": "inc",
-		"body": "{% include ${1:\"$2\"} %}",
+		"body": "{% include ${1:'$2'} %}",
 		"description": "include (inc)",
 		"scope": "text.html.django"
 	},
 	"include": {
 		"prefix": "include",
-		"body": "{% include ${1:\"$2\"} %}",
+		"body": "{% include ${1:'$2'} %}",
 		"description": "include",
 		"scope": "text.html.django"
 	},
@@ -181,7 +181,7 @@
 	},
 	"now": {
 		"prefix": "now",
-		"body": "{% now \"$1\" %}",
+		"body": "{% now '$1' %}",
 		"description": "now",
 		"scope": "text.html.django"
 	},
@@ -205,7 +205,7 @@
 	},
 	"static": {
 		"prefix": "static",
-		"body": "{% static \"${1:$SELECTION}\" %}",
+		"body": "{% static '${1:$SELECTION}' %}",
 		"description": "static",
 		"scope": "text.html.django"
 	},
@@ -235,7 +235,7 @@
 	},
 	"trans": {
 		"prefix": "trans",
-		"body": "{% trans \"${1:$SELECTION}\" %}",
+		"body": "{% trans '${1:$SELECTION}' %}",
 		"description": "trans",
 		"scope": "text.html.django"
 	},
