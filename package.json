@@ -2,9 +2,9 @@
     "name": "vscode-djaneiro",
     "displayName": "Djaneiro - Django Snippets",
     "description": "A collection of snippets for django templates, models, views, fields & forms. Ported from Djaneiro for SublimeText",
-    "version": "1.0.1",
+    "version": "1.1.5",
     "publisher": "thebarkman",
- 	"icon": "images/djaneiro.png",
+    "icon": "images/djaneiro.png",
     "galleryBanner": {
         "color": "#0C4B33",
         "theme": "dark"
@@ -20,6 +20,10 @@
         "python",
         "django"
     ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ScottBarkman/vscode-djaneiro"
+    },
     "contributes": {
         "snippets": [
             {

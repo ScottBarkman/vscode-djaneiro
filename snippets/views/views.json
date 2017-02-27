@@ -8,7 +8,7 @@
 	"createview": {
 		"prefix": "createview",
 		"body": "\r\nclass ${1:MODEL_NAME}CreateView(CreateView):\r\n    model = ${1:MODEL_NAME}\r\n    template_name = \"${2:TEMPLATE_NAME}\"\r\n",
-		"description": "",
+		"description": "",e
 		"scope": "source.python"
 	},
 	"deleteview": {
@@ -31,13 +31,13 @@
 	},
 	"stackedinline": {
 		"prefix": "stackedinline",
-		"body": "\r\nclass ${1}Inline(admin.StackedInline):\r\n        '''\r\n            Stacked Inline View for ${1}\r\n        '''\r\n      model = ${2:${1}}\r\n      min_num = ${3:3}\r\n      max_num = ${4:20}\r\n      extra = ${5:1}\r\n      raw_id_fields = (${6},)\r\n\r\n",
+		"body": "\r\nclass ${1}Inline(admin.StackedInline):\r\n    '''\r\n        Stacked Inline View for ${1}\r\n    '''\r\n    model = ${2:${1}}\r\n    min_num = ${3:3}\r\n    max_num = ${4:20}\r\n    extra = ${5:1}\r\n    raw_id_fields = (${6},)\r\n\r\n",
 		"description": "Stacked Inline",
 		"scope": "source.python"
 	},
 	"tabularinline": {
 		"prefix": "tabularinline",
-		"body": "\r\nclass ${1}Inline(admin.TabularInline):\r\n        '''\r\n            Tabular Inline View for ${1}\r\n        '''\r\n      model = ${2:${1}}\r\n      min_num = ${3:3}\r\n      max_num = ${4:20}\r\n      extra = ${5:1}\r\n      raw_id_fields = (${6},)\r\n\r\n",
+		"body": "\r\nclass ${1}Inline(admin.TabularInline):\r\n    '''\r\n        Tabular Inline View for ${1}\r\n    '''\r\n    model = ${2:${1}}\r\n    min_num = ${3:3}\r\n    max_num = ${4:20}\r\n    extra = ${5:1}\r\n    raw_id_fields = (${6},)\r\n\r\n",
 		"description": "Tabular Inline",
 		"scope": "source.python"
 	},
