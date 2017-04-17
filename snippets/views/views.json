@@ -8,7 +8,7 @@
 	"createview": {
 		"prefix": "createview",
 		"body": "\r\nclass ${1:MODEL_NAME}CreateView(CreateView):\r\n    model = ${1:MODEL_NAME}\r\n    template_name = \"${2:TEMPLATE_NAME}\"\r\n",
-		"description": "",e
+		"description": "",
 		"scope": "source.python"
 	},
 	"deleteview": {
@@ -68,6 +68,17 @@
 	"context": {
 		"prefix": "context",
 		"body": "\r\ndef get_context_data(self, **kwargs):\r\n    context = super(${1:CLASS_NAME}, self).get_context_data(**kwargs)\r\n    return context\r\n",
+		"description": "",
+		"scope": "source.python"
+	},
+	"get_queryset": {
+		"prefix": "get_queryset",
+		"body": [
+			"def get_queryset(self):",
+			"\tqueryset = super(${1:CLASS_NAME}, self).get_queryset()",
+			"\tqueryset = queryset${3: # TODO}",
+			"\treturn queryset"
+		],
 		"description": "",
 		"scope": "source.python"
 	}

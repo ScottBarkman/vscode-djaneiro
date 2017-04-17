@@ -1,0 +1,8 @@
+{
+	"iadmin": {
+		"prefix": "iadmin",
+		"body": "from django.contrib import admin",
+		"description": "from ... import admin",
+		"scope": "source.python"
+	}
+}

@@ -1,0 +1,14 @@
+{
+	"register": {
+		"prefix": "register",
+		"body": "admin.site.register($1)",
+		"description": "",
+		"scope": "source.python"
+	},
+	"registeradmin": {
+		"prefix": "registeradmin",
+		"body": "admin.site.register($1, $1Admin)",
+		"description": "",
+		"scope": "source.python"
+	}
+}

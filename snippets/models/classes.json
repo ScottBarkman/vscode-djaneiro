@@ -10,5 +10,25 @@
 		"body": "\r\nclass ${1:MODELNAME}(models.Model):\r\n\r\n    class Meta:\r\n        verbose_name = \"$1\"\r\n        verbose_name_plural = \"$1s\"\r\n\r\n    def __str__(self):\r\n        pass\r\n    ",
 		"description": "Model",
 		"scope": "source.python"
-	}
+	},
+    "modelmixin": {
+        "prefix": "modelmixin",
+        "body": [
+			"class $1Mixin(models.Model):",
+			"\t${2:# TODO}\r\n",
+			"\tclass Meta:",
+			"\t\tabstract = True"
+		],
+        "description": "",
+        "scope": "source.python"
+    },
+    "queryset": {
+        "prefix": "queryset",
+        "body": [
+			"class $1QuerySet(models.QuerySet):",
+			"\tpass"
+		],
+        "description": "",
+        "scope": "source.python"
+    }
 }
