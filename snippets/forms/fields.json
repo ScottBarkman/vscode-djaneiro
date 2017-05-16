@@ -1,19 +1,19 @@
 {
 	"fbool": {
 		"prefix": "fbool",
-		"body": "${1:FIELDNAME} = forms.BooleanField($2)",
+		"body": "${1:FIELDNAME} = forms.BooleanField($2, required=${3:False})",
 		"description": "BooleanField (fbool)",
 		"scope": "source.python"
 	},
 	"fchar": {
 		"prefix": "fchar",
-		"body": "${1:FIELDNAME} = forms.CharField($2)",
+		"body": "${1:FIELDNAME} = forms.CharField($2,${3: max_length=$4,} required=${5:False})",
 		"description": "CharField (fchar)",
 		"scope": "source.python"
 	},
 	"fchoice": {
 		"prefix": "fchoice",
-		"body": "${1:FIELDNAME} = forms.ChoiceField($2)",
+		"body": "${1:FIELDNAME} = forms.ChoiceField($2, choices=[${3:CHOICES}], required=${4:False})",
 		"description": "ChoiceField (fchoice)",
 		"scope": "source.python"
 	},
@@ -25,49 +25,49 @@
 	},
 	"fdate": {
 		"prefix": "fdate",
-		"body": "${1:FIELDNAME} = forms.DateField($2)",
+		"body": "${1:FIELDNAME} = forms.DateField($2, required=${3:False})",
 		"description": "DateField (fdate)",
 		"scope": "source.python"
 	},
 	"fdatetime": {
 		"prefix": "fdatetime",
-		"body": "${1:FIELDNAME} = forms.DateTimeField($2)",
+		"body": "${1:FIELDNAME} = forms.DateTimeField($2, required=${3:False})",
 		"description": "DateTimeField (fdatetime)",
 		"scope": "source.python"
 	},
 	"fdecimal": {
 		"prefix": "fdecimal",
-		"body": "${1:FIELDNAME} = forms.DecimalField($2)",
+		"body": "${1:FIELDNAME} = forms.DecimalField($2, required=${3:False})",
 		"description": "DecimalField (fdecimal)",
 		"scope": "source.python"
 	},
 	"fduration": {
 		"prefix": "fduration",
-		"body": "${1:FIELDNAME} = forms.DurationField($2)",
+		"body": "${1:FIELDNAME} = forms.DurationField($2, required=${3:False})",
 		"description": "DurationField (fduration)",
 		"scope": "source.python"
 	},
 	"femail": {
 		"prefix": "femail",
-		"body": "${1:FIELDNAME} = forms.EmailField($2)",
+		"body": "${1:FIELDNAME} = forms.EmailField($2, required=${3:False})",
 		"description": "EmailField (femail)",
 		"scope": "source.python"
 	},
 	"ffile": {
 		"prefix": "ffile",
-		"body": "${1:FIELDNAME} = forms.FileField($2)",
+		"body": "${1:FIELDNAME} = forms.FileField($2,${3: max_length=$4,} required=${5:False})",
 		"description": "FileField (ffile)",
 		"scope": "source.python"
 	},
 	"ffilepath": {
 		"prefix": "ffilepath",
-		"body": "${1:FIELDNAME} = forms.FilePathField($2)",
+		"body": "${1:FIELDNAME} = forms.FilePathField($2, path=${3:/absolute_path/}, required=${4:False})",
 		"description": "FilePathField (ffilepath)",
 		"scope": "source.python"
 	},
 	"ffloat": {
 		"prefix": "ffloat",
-		"body": "${1:FIELDNAME} = forms.FloatField($2)",
+		"body": "${1:FIELDNAME} = forms.FloatField($2, required=${3:False})",
 		"description": "FloatField (ffloat)",
 		"scope": "source.python"
 	},
@@ -77,15 +77,21 @@
 		"description": "IPAddressField (fip)",
 		"scope": "source.python"
 	},
+	"fgenericip": {
+		"prefix": "fip",
+		"body": "${1:FIELDNAME} = forms.GenericIPAddressField($2)",
+		"description": "IPAddressField (fgenericip)",
+		"scope": "source.python"
+	},
 	"fimg": {
 		"prefix": "fimg",
-		"body": "${1:FIELDNAME} = forms.ImageField($2)",
+		"body": "${1:FIELDNAME} = forms.ImageField($2, required=${3:False})",
 		"description": "ImageField (fimg)",
 		"scope": "source.python"
 	},
 	"fint": {
 		"prefix": "fint",
-		"body": "${1:FIELDNAME} = forms.IntegerField($2)",
+		"body": "${1:FIELDNAME} = forms.IntegerField($2, required=${3:False})",
 		"description": "IntegerField (fint)",
 		"scope": "source.python"
 	},
@@ -109,25 +115,31 @@
 	},
 	"fmuchoice": {
 		"prefix": "fmuchoice",
-		"body": "${1:FIELDNAME} = forms.MultipleChoiceField($2)",
+		"body": "${1:FIELDNAME} = forms.MultipleChoiceField($2, choices=[${3:CHOICES}], required=${4:False})",
 		"description": "MultipleChoiceField (fmuchoice)",
+		"scope": "source.python"
+	},
+	"ftypedmuchoice": {
+		"prefix": "ftypedmuchoice",
+		"body": "${1:FIELDNAME} = forms.TypedMultipleChoiceField($2, choices=[${3:CHOICES}], coerce=${4:TYPE}, required=${5:False})",
+		"description": "TypedMultipleChoiceField (ftypedmuchoice)",
 		"scope": "source.python"
 	},
 	"fnullbool": {
 		"prefix": "fnullbool",
-		"body": "${1:FIELDNAME} = forms.NullBooleanField($2)",
+		"body": "${1:FIELDNAME} = forms.NullBooleanField($2, required=${3:False})",
 		"description": "NullBooleanField (fnullbool)",
 		"scope": "source.python"
 	},
 	"fregex": {
 		"prefix": "fregex",
-		"body": "${1:FIELDNAME} = forms.RegexField($2)",
+		"body": "${1:FIELDNAME} = forms.RegexField($2, regex=${3:REGEX}, required=${4:False})",
 		"description": "RegexField (fregex)",
 		"scope": "source.python"
 	},
 	"fslug": {
 		"prefix": "fslug",
-		"body": "${1:FIELDNAME} = forms.SlugField($2)",
+		"body": "${1:FIELDNAME} = forms.SlugField($2, allow_unicode=${3:False}, required=${4:False})",
 		"description": "SlugField (fslug)",
 		"scope": "source.python"
 	},
@@ -139,13 +151,13 @@
 	},
 	"ftime": {
 		"prefix": "ftime",
-		"body": "${1:FIELDNAME} = forms.TimeField($2)",
+		"body": "${1:FIELDNAME} = forms.TimeField($2, required=${3:False})",
 		"description": "TimeField (ftime)",
 		"scope": "source.python"
 	},
 	"ftchoice": {
 		"prefix": "ftchoice",
-		"body": "${1:FIELDNAME} = forms.TypedChoiceField($2)",
+		"body": "${1:FIELDNAME} = forms.TypedChoiceField($2, required=${3:False})",
 		"description": "TypedChoiceField (ftchoice)",
 		"scope": "source.python"
 	},
@@ -157,8 +169,14 @@
 	},
 	"furl": {
 		"prefix": "furl",
-		"body": "${1:FIELDNAME} = forms.URLField($2)",
+		"body": "${1:FIELDNAME} = forms.URLField($2, required=${3:False})",
 		"description": "URLField (furl)",
+		"scope": "source.python"
+	},
+	"fuuid": {
+		"prefix": "fuuid",
+		"body": "${1:FIELDNAME} = forms.UUIDField($2, required=${3:False})",
+		"description": "UUIDField (fuuid)",
 		"scope": "source.python"
 	}
 }

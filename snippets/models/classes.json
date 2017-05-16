@@ -1,13 +1,53 @@
 {
 	"Model_full": {
 		"prefix": "Model_full",
-		"body": "\r\nclass ${1:MODELNAME}(models.Model):\r\n    ${2:# TODO: Define fields here}\r\n\r\n    class Meta:\r\n        verbose_name = \"$1\"\r\n        verbose_name_plural = \"$1s\"\r\n\r\n    def __str__(self):\r\n        pass\r\n\r\n    def save(self):\r\n        pass\r\n\r\n    @models.permalink\r\n    def get_absolute_url(self):\r\n        return ('')\r\n\r\n    ${3:# TODO: Define custom methods here}\r\n\r\n    ",
+		"body": [
+			"class ${1:MODELNAME}(models.Model):"
+			"\t\"\"\"${2:Model definition for $1}.\"\"\""
+			""
+			"\t${3:# TODO: Define fields here}"
+			""
+			"\tclass Meta:"
+			"\t\t\"\"\"Meta definition for $1.\"\"\""
+			""
+			"\t\tverbose_name = '$1'"
+			"\t\tverbose_name_plural = '$1s'"
+			""
+			"\tdef __unicode__(self):"
+			"\t\t\"\"\"Unicode representation of $1.\"\"\""
+			"\t\tpass"
+			""
+			"\tdef save(self):"
+			"\t\t\"\"\"Save method for $1.\"\"\""
+			"\t\tpass"
+			""
+			"\tdef get_absolute_url(self):"
+			"\t\t\"\"\"Return absolute url for $1.\"\"\""
+			"\t\treturn ('')"
+			""
+			"\t${4:# TODO: Define custom methods here}"
+			""]
 		"description": "Model (full)",
 		"scope": "source.python"
 	},
 	"Model": {
 		"prefix": "Model",
-		"body": "\r\nclass ${1:MODELNAME}(models.Model):\r\n\r\n    class Meta:\r\n        verbose_name = \"$1\"\r\n        verbose_name_plural = \"$1s\"\r\n\r\n    def __str__(self):\r\n        pass\r\n    ",
+		"body": [
+			"class ${1:MODELNAME}(models.Model):"
+			"\t\"\"\"${2:Model definition for $1}.\"\"\""
+			""
+			"\t${3:# TODO: Define fields here}"
+			""
+			"\tclass Meta:"
+			"\t\t\"\"\"Meta definition for $1.\"\"\""
+			""
+			"\t\tverbose_name = '$1'"
+			"\t\tverbose_name_plural = '$1s'"
+			""
+			"\tdef __unicode__(self):"
+			"\t\t\"\"\"Unicode representation of $1.\"\"\""
+			"\t\tpass"
+			""]
 		"description": "Model",
 		"scope": "source.python"
 	}
