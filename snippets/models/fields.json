@@ -5,10 +5,22 @@
 		"description": "AutoField (mauto)",
 		"scope": "source.python"
 	},
+	"mbigauto": {
+		"prefix": "mbigauto",
+		"body": "${1:FIELDNAME} = models.BigAutoField($2)",
+		"description": "BigAutoField (mbigauto)",
+		"scope": "source.python"
+	},
 	"mbigint": {
 		"prefix": "mbigint",
 		"body": "${1:FIELDNAME} = models.BigIntegerField($2)",
 		"description": "BigIntegerField (mbigint)",
+		"scope": "source.python"
+	},
+	"mbinary": {
+		"prefix": "mbinary",
+		"body": "${1:FIELDNAME} = models.BinaryField($2)",
+		"description": "BinaryField (mbinary)",
 		"scope": "source.python"
 	},
 	"mbool": {
@@ -31,13 +43,13 @@
 	},
 	"mdate": {
 		"prefix": "mdate",
-		"body": "${1:FIELDNAME} = models.DateField($2)",
+		"body": "${1:FIELDNAME} = models.DateField($2, auto_now=${3:False}, auto_now_add=${4:False})",
 		"description": "DateField (mdate)",
 		"scope": "source.python"
 	},
 	"mdatetime": {
 		"prefix": "mdatetime",
-		"body": "${1:FIELDNAME} = models.DateTimeField($2)",
+		"body": "${1:FIELDNAME} = models.DateTimeField($2, auto_now=${3:False}, auto_now_add=${4:False})",
 		"description": "DateTimeField (mdatetime)",
 		"scope": "source.python"
 	},
@@ -55,19 +67,19 @@
 	},
 	"memail": {
 		"prefix": "memail",
-		"body": "${1:FIELDNAME} = models.EmailField($2)",
+		"body": "${1:FIELDNAME} = models.EmailField($2, max_length=${3:254})",
 		"description": "EmailField (memail)",
 		"scope": "source.python"
 	},
 	"mfile": {
 		"prefix": "mfile",
-		"body": "${1:FIELDNAME} = models.FileField($2)",
+		"body": "${1:FIELDNAME} = models.FileField($2, upload_to=${3:None}, max_length=${4:100})",
 		"description": "FileField (mfile)",
 		"scope": "source.python"
 	},
 	"mfilepath": {
 		"prefix": "mfilepath",
-		"body": "${1:FIELDNAME} = models.FilePathField($2)",
+		"body": "${1:FIELDNAME} = models.FilePathField($2, path=${3:None}, match=${4:None}, recursive=${5:recursive}, max_length=${6:100})",
 		"description": "FilePathField (mfilepath)",
 		"scope": "source.python"
 	},
@@ -79,7 +91,7 @@
 	},
 	"fk": {
 		"prefix": "fk",
-		"body": "${1:FIELDNAME} = models.ForeignKey($2)",
+		"body": "${1:FIELDNAME} = models.ForeignKey(${2:OTHERMODEL})",
 		"description": "ForeignKey (fk)",
 		"scope": "source.python"
 	},
@@ -91,7 +103,7 @@
 	},
 	"mimg": {
 		"prefix": "mimg",
-		"body": "${1:FIELDNAME} = models.ImageField($2)",
+		"body": "${1:FIELDNAME} = models.ImageField($2, upload_to=${3:None}, height_field=${4:None}, width_field=${5:None}, max_length=${5:100})",
 		"description": "ImageField (mimg)",
 		"scope": "source.python"
 	},
@@ -101,9 +113,15 @@
 		"description": "IntegerField (mint)",
 		"scope": "source.python"
 	},
+	"mgenericip": {
+		"prefix": "mgenericip",
+		"body": "${1:FIELDNAME} = models.GenericIPAddressField($2, protocol=${3:'both'}, unpack_ipv4=${4:False})",
+		"description": "GenericIPAddressField (mimg)",
+		"scope": "source.python"
+	},
 	"m2m": {
 		"prefix": "m2m",
-		"body": "${1:FIELDNAME} = models.ManyToManyField($2)",
+		"body": "${1:FIELDNAME} = models.ManyToManyField(${2:OTHERMODEL})",
 		"description": "ManyToManyField (m2m)",
 		"scope": "source.python"
 	},
@@ -115,7 +133,7 @@
 	},
 	"o2o": {
 		"prefix": "o2o",
-		"body": "${1:FIELDNAME} = models.OneToOneField($2)",
+		"body": "${1:FIELDNAME} = models.OneToOneField(${2:OTHERMODEL})",
 		"description": "OneToOneField (o2o)",
 		"scope": "source.python"
 	},
@@ -157,13 +175,13 @@
 	},
 	"mtime": {
 		"prefix": "mtime",
-		"body": "${1:FIELDNAME} = models.TimeField($2)",
+		"body": "${1:FIELDNAME} = models.TimeField($2, auto_now=${4:False}, auto_now_add=${5:False})",
 		"description": "TimeField (mtime)",
 		"scope": "source.python"
 	},
 	"murl": {
 		"prefix": "murl",
-		"body": "${1:FIELDNAME} = models.URLField($2)",
+		"body": "${1:FIELDNAME} = models.URLField($2, max_length=${3:200})",
 		"description": "URLField (murl)",
 		"scope": "source.python"
 	},
@@ -171,6 +189,12 @@
 		"prefix": "musstate",
 		"body": "${1:FIELDNAME} = models.USStateField($2)",
 		"description": "USStateField (musstate)",
+		"scope": "source.python"
+	},
+	"muuid": {
+		"prefix": "muuid",
+		"body": "${1:FIELDNAME} = models.UUIDField($2)",
+		"description": "UUIDField (muuid)",
 		"scope": "source.python"
 	},
 	"mxml": {

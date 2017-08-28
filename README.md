@@ -58,7 +58,9 @@ If you'd like to contribute to this collection of snippets, feel free to [submit
 | Abbreviation | Tag                                     |
 |--------------|-----------------------------------------|
 | mauto        | ``models.AutoField()``                  |
+| mbigauto     | ``models.BigAutoField()``               |
 | mbigint      | ``models.BigIntegerField()``            |
+| mbinary      | ``models.BinaryField()``                |
 | mbool        | ``models.BooleanField()``               |
 | mchar        | ``models.CharField()``                  |
 | mcoseint     | ``models.CommaSeparatedIntegerField()`` |
@@ -72,6 +74,7 @@ If you'd like to contribute to this collection of snippets, feel free to [submit
 | mfloat       | ``models.FloatField()``                 |
 | mimg         | ``models.ImageField()``                 |
 | mint         | ``models.IntegerField()``               |
+| mgenericip   | ``models.GenericIPAddressField()``      |
 | mip          | ``models.IPAddressField()``             |
 | mnullbool    | ``models.NullBooleanField()``           |
 | mphone       | ``models.PhoneNumberField()``           |
@@ -83,6 +86,7 @@ If you'd like to contribute to this collection of snippets, feel free to [submit
 | mtime        | ``models.TimeField()``                  |
 | murl         | ``models.URLField()``                   |
 | musstate     | ``models.USStateField()``               |
+| muuid        | ``models.UUIDField()``                  |
 | mxml         | ``models.XMLField()``                   |
 | fk           | ``models.ForeignKey()``                 |
 | m2m          | ``models.ManyToManyField()``            |
@@ -90,34 +94,38 @@ If you'd like to contribute to this collection of snippets, feel free to [submit
 
 ### Snippets for Django form fields
 
-| Abbreviation | Code                                 |
-|--------------|--------------------------------------|
-| fchar        | ``forms.CharField()``                |
-| fchoice      | ``forms.ChoiceField()``              |
-| fcombo       | ``forms.ComboField()``               |
-| fdate        | ``forms.DateField()``                |
-| fdatetime    | ``forms.DateTime()``                 |
-| fdecimal     | ``forms.DecimalField()``             |
-| fduration    | ``forms.DurationField()``            |
-| femail       | ``forms.EmailField()``               |
-| ffile        | ``forms.FileField()``                |
-| ffilepath    | ``forms.FilePathField()``            |
-| ffloat       | ``forms.FloatField()``               |
-| fimg         | ``forms.ImageField()``               |
-| fint         | ``forms.IntegerField()``             |
-| fip          | ``forms.IPAddressField()``           |
-| fmochoice    | ``forms.ModelChoiceField()``         |
-| fmomuchoice  | ``forms.ModelMultipleChoiceField()`` |
-| fmuchoice    | ``forms.MultipleChoiceField()``      |
-| fmuval       | ``forms.MultipleValueField()``       |
-| fnullbool    | ``forms.NullBooleanField()``         |
-| fregex       | ``forms.RegexField()``               |
-| fslug        | ``forms.SlugField()``                |
-| fsdatetime   | ``forms.SplitDateTime()``            |
-| ftime        | ``forms.TimeField()``                |
-| ftchoice     | ``forms.TypedChoiceField()``         |
-| ftmuchoice   | ``forms.TypedMultipleChoiceField()`` |
-| furl         | ``forms.URLField()``                 |
+| Abbreviation   | Code                                 |
+|----------------|--------------------------------------|
+| fbool          | ``forms.BooleanField()``             |
+| fchar          | ``forms.CharField()``                |
+| fchoice        | ``forms.ChoiceField()``              |
+| fcombo         | ``forms.ComboField()``               |
+| fdate          | ``forms.DateField()``                |
+| fdatetime      | ``forms.DateTime()``                 |
+| fdecimal       | ``forms.DecimalField()``             |
+| fduration      | ``forms.DurationField()``            |
+| femail         | ``forms.EmailField()``               |
+| ffile          | ``forms.FileField()``                |
+| ffilepath      | ``forms.FilePathField()``            |
+| ffloat         | ``forms.FloatField()``               |
+| fimg           | ``forms.ImageField()``               |
+| fint           | ``forms.IntegerField()``             |
+| fip            | ``forms.IPAddressField()``           |
+| fgenericip     | ``forms.GenericIPAddressField()``    |
+| fmochoice      | ``forms.ModelChoiceField()``         |
+| fmomuchoice    | ``forms.ModelMultipleChoiceField()`` |
+| fmuchoice      | ``forms.MultipleChoiceField()``      |
+| ftypedmuchoice | ``forms.TypedMultipleChoiceField()`` |
+| fmuval         | ``forms.MultipleValueField()``       |
+| fnullbool      | ``forms.NullBooleanField()``         |
+| fregex         | ``forms.RegexField()``               |
+| fslug          | ``forms.SlugField()``                |
+| fsdatetime     | ``forms.SplitDateTime()``            |
+| ftime          | ``forms.TimeField()``                |
+| ftchoice       | ``forms.TypedChoiceField()``         |
+| ftmuchoice     | ``forms.TypedMultipleChoiceField()`` |
+| furl           | ``forms.URLField()``                 |
+| fuuid          | ``forms.UUIDField()``                |
 
 ### Snippets for Django Views
 
@@ -154,6 +162,13 @@ If you'd like to contribute to this collection of snippets, feel free to [submit
 | traceback    | ``import traceback; traceback.print_exc();``      |
 | utfc         | ``coding: utf-8 ``                                |
 
+
+### 1.2.0
+
+Change docstrings to class definitions for flake8 compatibility
+Updated model / form fields to utilize fields in Django 1.11
+Clean up repo from initial sublime port
+
 ### 1.1.6
 
 Fix admin inline spacing
@@ -163,3 +178,9 @@ Updated logo
 ### 1.0.0
 
 Initial port of Djaneiro for Visual Studio Code
+
+
+##TODO: 
+
+- Add Django version number when field was deprecated to the snippet description. Some of these field types are no longer used.
+- Update view snippets
