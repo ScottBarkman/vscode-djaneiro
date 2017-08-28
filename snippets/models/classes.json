@@ -50,5 +50,25 @@
 			""]
 		"description": "Model",
 		"scope": "source.python"
-	}
+	},
+    "modelmixin": {
+        "prefix": "modelmixin",
+        "body": [
+			"class $1Mixin(models.Model):",
+			"\t${2:# TODO}\r\n",
+			"\tclass Meta:",
+			"\t\tabstract = True"
+		],
+        "description": "",
+        "scope": "source.python"
+    },
+    "queryset": {
+        "prefix": "queryset",
+        "body": [
+			"class $1QuerySet(models.QuerySet):",
+			"\tpass"
+		],
+        "description": "",
+        "scope": "source.python"
+    }
 }

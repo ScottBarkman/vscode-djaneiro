@@ -1,0 +1,44 @@
+{
+    "from views import": {
+		"prefix": "from views import",
+		"body": "from .views import $1",
+		"description": "",
+		"scope": "source.python"
+	},
+    "import createview": {
+		"prefix": "import createview",
+		"body": "from django.views.generic import CreateView",
+		"description": "from ... import CreateView",
+		"scope": "source.python"
+	},
+    "import detailview": {
+		"prefix": "import detailview",
+		"body": "from django.views.generic import DetailView",
+		"description": "from ... import DetailView",
+		"scope": "source.python"
+	},
+    "import formview": {
+		"prefix": "import formview",
+		"body": "from django.views.generic import FormView",
+		"description": "from ... import FormView",
+		"scope": "source.python"
+	},
+    "import listview": {
+		"prefix": "import listview",
+		"body": "from django.views.generic import ListView",
+		"description": "from ... import ListView",
+		"scope": "source.python"
+	},
+    "import templateview": {
+		"prefix": "import templateview",
+		"body": "from django.views.generic import TemplateView",
+		"description": "from ... import TemplateView",
+		"scope": "source.python"
+	},
+    "import updateview": {
+		"prefix": "import updateview",
+		"body": "from django.views.generic import UpdateView",
+		"description": "from ... import UpdateView",
+		"scope": "source.python"
+	}
+}

@@ -1,0 +1,26 @@
+{
+    "fmai": {
+        "prefix": "fmai",
+        "body": "from .managers import $1QuerySet",
+        "description": "",
+        "scope": "source.python"
+    },
+    "fmi": {
+        "prefix": "fmi",
+        "body": "from .models import $1",
+        "description": "",
+        "scope": "source.python"
+    },
+    "imodels": {
+        "prefix": "imodels",
+        "body": "from django.db import models",
+        "description": "from ... import models",
+        "scope": "source.python"
+    },
+    "irmf": {
+        "prefix": "irmf",
+        "body": "from redactor.fields import RedactorField",
+        "description": "from redactor.fields import RedactorField",
+        "scope": "source.python"
+    }
+}

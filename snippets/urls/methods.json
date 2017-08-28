@@ -1,0 +1,24 @@
+{
+    "url": {
+		"prefix": "url",
+		"body": [
+            "url(",
+            "\t${4:r'^$1\$'},",
+            "\t$2.as_view(),",
+            "\tname='$3',",
+            "),"
+        ],
+		"description": "",
+		"scope": "source.python"
+	},
+    "urlpatterns": {
+		"prefix": "urlpatterns",
+		"body": [
+            "urlpatterns = [",
+            "\t$1",
+            "]"
+        ],
+		"description": "",
+		"scope": "source.python"
+	}    
+}

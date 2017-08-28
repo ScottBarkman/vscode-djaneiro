@@ -25,7 +25,37 @@
         "url": "https://github.com/ScottBarkman/vscode-djaneiro"
     },
     "contributes": {
+        "languages": [
+            {
+                "id": "html",
+                "aliases": [
+                    "Django Template",
+                    "HTML"
+                ],
+                "extensions": [".html", ".htm"],
+                "configuration": "./django-html.configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "html",
+                "scopeName": "text.html.django",
+                "path": "./syntaxes/django-html.json"
+            }
+        ],        
         "snippets": [
+            {
+                "language": "python",
+                "path": "./snippets/admin/fieldsets.json"
+            },
+            {
+                "language": "python",
+                "path": "./snippets/admin/imports.json"
+            },
+            {
+                "language": "python",
+                "path": "./snippets/admin/methods.json"
+            },
             {
                 "language": "python",
                 "path": "./snippets/forms/classes.json"
@@ -33,6 +63,10 @@
             {
                 "language": "python",
                 "path": "./snippets/forms/fields.json"
+            },
+            {
+                "language": "python",
+                "path": "./snippets/forms/imports.json"
             },
             {
                 "language": "python",
@@ -44,6 +78,14 @@
             },
             {
                 "language": "python",
+                "path": "./snippets/models/imports.json"
+            },
+            {
+                "language": "python",
+                "path": "./snippets/models/methods.json"
+            },
+            {
+                "language": "python",
                 "path": "./snippets/python/classes.json"
             },
             {
@@ -52,11 +94,39 @@
             },
             {
                 "language": "python",
+                "path": "./snippets/settings/imports.json"
+            },
+            {
+                "language": "python",
                 "path": "./snippets/views/views.json"
+            },
+            {
+                "language": "python",
+                "path": "./snippets/views/imports.json"
+            },
+            {
+                "language": "python",
+                "path": "./snippets/templates/methods.json"
+            },
+            {
+                "language": "python",
+                "path": "./snippets/templates/imports.json"
             },
             {
                 "language": "html",
                 "path": "./snippets/templates/html.json"
+            },
+            {
+                "language": "python",
+                "path": "./snippets/url/imports.json"
+            },
+            {
+                "language": "python",
+                "path": "./snippets/url/methods.json"
+            },
+            {
+                "language": "python",
+                "path": "./snippets/url/regexes.json"
             }
         ]
     }

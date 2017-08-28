@@ -1,0 +1,14 @@
+{
+	"ffi": {
+		"prefix": "ffi",
+		"body": "from .forms import $1",
+		"description": "",
+		"scope": "source.python"
+	},
+	"iforms": {
+		"prefix": "iforms",
+		"body": "from django import forms",
+		"description": "from ... import forms",
+		"scope": "source.python"
+	}
+}

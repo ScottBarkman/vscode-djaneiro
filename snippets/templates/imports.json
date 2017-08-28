@@ -1,0 +1,29 @@
+{
+	"ilib": {
+		"prefix": "ilib",
+		"body": [
+            "from django import template",
+            "register = template.Library()"
+        ],
+		"description": "",
+		"scope": "source.python"
+	},
+	"li18n": {
+		"prefix": "li18n",
+		"body": "{% load i18n %}",
+		"description": "",
+		"scope": "text.html.django"
+	},
+	"lstatic": {
+		"prefix": "lstatic",
+		"body": "{% load staticfiles %}",
+		"description": "",
+		"scope": "text.html.django"
+	},
+	"ltags": {
+		"prefix": "ltags",
+		"body": "{% load $SELECTION$1_tags %}",
+		"description": "",
+		"scope": "text.html.django"
+	}
+}
