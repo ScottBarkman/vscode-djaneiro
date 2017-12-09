@@ -162,6 +162,32 @@ If you'd like to contribute to this collection of snippets, feel free to [submit
 | traceback    | ``import traceback; traceback.print_exc();``      |
 | utfc         | ``coding: utf-8 ``                                |
 
+### Snippets for Django form import
+
+| Abbreviation         | Code                                                      |
+|----------------------|-----------------------------------------------------------|
+| iadmin               | ``from django.contrib import admin``                      |
+| ffi                  | ``from .forms import ``                                   |
+| iforms               | ``from django import forms``                              |
+| fmai                 | ``from .managers import``                                 |
+| fmi                  | ``from .models import``                                   |
+| imodels              | ``from django.db import models``                          |
+| irmf                 | ``from redactor.fields import RedactorField``             |
+| imjf                 | ``from django.contrib.postgres.fields import JSONField``  |
+| isettings            | ``from django.conf import settings``                      |
+| ilib                 | ``from django import template``                           |
+| ireverse             | ``from django.core.urlresolvers import reverse`           |
+| iurl                 | ``from django.conf.urls import url``                      |
+| from views import    | ``from .views import``                                    |
+| import createview    | ``from django.views.generic import CreateView``           |
+| import detailview    | ``from django.views.generic import DetailView``           |
+| import formview      | ``from django.views.generic import FormView``             |
+| import listview      | ``from django.views.generic import ListView``             |
+| import templateview  | ``from django.views.generic import TemplateView``         |
+| import updateview    | ``from django.views.generic import UpdateView``           |
+
+
+
 
 ### 1.2.0
 
@@ -180,7 +206,7 @@ Updated logo
 Initial port of Djaneiro for Visual Studio Code
 
 
-##TODO: 
+##TODO:
 
 - Add Django version number when field was deprecated to the snippet description. Some of these field types are no longer used.
 - Update view snippets
