@@ -202,5 +202,11 @@
 		"body": "${1:FIELDNAME} = models.XMLField($2)",
 		"description": "XMLField (mxml)",
 		"scope": "source.python"
+	},
+	"mjson": {
+		"prefix": "mjson",
+		"body": "${1:FIELDNAME} = models.JSONField($2)",
+		"description": "JSONField (mjson)",
+		"scope": "source.python"
 	}
 }

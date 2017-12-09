@@ -22,5 +22,11 @@
         "body": "from redactor.fields import RedactorField",
         "description": "from redactor.fields import RedactorField",
         "scope": "source.python"
+    },
+    "imjf": {
+        "prefix": "imjf",
+        "body": "from django.contrib.postgres.fields import JSONField",
+        "description": "from django.contrib.postgres.fields import JSONField",
+        "scope": "source.python"
     }
 }

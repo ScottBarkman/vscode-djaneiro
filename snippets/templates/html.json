@@ -7,7 +7,7 @@
 	},
 	"block": {
 		"prefix": "block",
-		"body": "\r\n{% block ${1:blockname} %}\r\n\t${2:$SELECTION}\r\n{% endblock ${1:blockname} %}\r\n\t",
+		"body": "\r\n{% block ${1:blockname} %}\r\n\t${2:$SELECTION}\r\n{% endblock %}\r\n\t",
 		"description": "block",
 		"scope": "text.html.django"
 	},

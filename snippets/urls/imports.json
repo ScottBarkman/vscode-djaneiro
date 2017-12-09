@@ -10,5 +10,5 @@
 		"body": "from django.conf.urls import url${1:, include",
 		"description": "from ... import url, include",
 		"scope": "source.python"
-	}    
+	}
 }
