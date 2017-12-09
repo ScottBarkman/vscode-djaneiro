@@ -1,14 +1,14 @@
 {
     "ireverse": {
 		"prefix": "ireverse",
-		"body": "from django.core.urlresolvers import reverse${2:_lazy}$1",
+		"body": "from django.core.urlresolvers import reverse",
 		"description": "from ... import reverse(_lazy)",
 		"scope": "source.python"
 	},
     "iurl": {
 		"prefix": "iurl",
-		"body": "from django.conf.urls import url${1:, include",
+		"body": "from django.conf.urls import url, include",
 		"description": "from ... import url, include",
 		"scope": "source.python"
-	}    
+	}
 }

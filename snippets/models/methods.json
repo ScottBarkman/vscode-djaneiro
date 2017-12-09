@@ -17,5 +17,15 @@
         ],
         "description": "",
         "scope": "source.python"
+    },
+    "get_absolute_url2": {
+        "prefix": "get_absolute_url2",
+        "body": [
+            "def get_absolute_url(self):",
+            "\tfrom django.urls import reverse",
+            "\treturn reverse('$1', kwargs={'pk': self.pk})"
+        ],
+        "description": "",
+        "scope": "source.python"
     }
 }
