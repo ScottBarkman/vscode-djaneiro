@@ -7,6 +7,158 @@ If you'd like to contribute to this collection of snippets, feel free to [submit
 
 ## Features
 
+### Snippets for Django Admin
+
+|   Abbreviation   |  Type  |               Code - Description               |
+| ---------------- | ------ | ---------------------------------------------- |
+| adminview        | class  | ``Model Admin with options``                   |
+| stackedinline    | class  | ``StackedInline with options``                 |
+| tabularinline    | class  | ``TabularInline with options``                 |
+| simplelistfilter | class  | ``SimpleListFilter``                           |
+| iadmin           | import | ``from django.contrib import admin``           |
+| iadminsite       | import | ``from django.contrib.admin import AdminSite`` |
+| register         | method | ``admin.site.register(<Model>)``               |
+| registermadmin   | method | ``admin.site.register(<Model>, <ModelAdmin>)`` |
+| fieldsets        | option | ``For more complex layout in ModelAdmin``      |
+
+### Snippets for Django Form 
+
+|  Abbreviation  |  Type  |                        Code - Description                         |
+| -------------- | ------ | ----------------------------------------------------------------- |
+| Form           | class  | ``Form(with TODOs)``                                              |
+| ModelForm      | class  | ``ModelFom``                                                      |
+| fbool          | field  | ``forms.BooleanField()``                                          |
+| fchar          | field  | ``forms.CharField()``                                             |
+| fchoice        | field  | ``forms.ChoiceField()``                                           |
+| fcombo         | field  | ``forms.ComboField()``                                            |
+| fdate          | field  | ``forms.DateField()``                                             |
+| fdatetime      | field  | ``forms.DateTime()``                                              |
+| fdecimal       | field  | ``forms.DecimalField()``                                          |
+| fduration      | field  | ``forms.DurationField()``                                         |
+| femail         | field  | ``forms.EmailField()``                                            |
+| ffile          | field  | ``forms.FileField()``                                             |
+| ffilepath      | field  | ``forms.FilePathField()``                                         |
+| ffloat         | field  | ``forms.FloatField()``                                            |
+| fimg           | field  | ``forms.ImageField()``                                            |
+| fint           | field  | ``forms.IntegerField()``                                          |
+| fip            | field  | ``forms.IPAddressField() - deprecated since version 1.7 ``        |
+| fgenericip     | field  | ``forms.GenericIPAddressField()``                                 |
+| fmochoice      | field  | ``forms.ModelChoiceField()``                                      |
+| fmomuchoice    | field  | ``forms.ModelMultipleChoiceField()``                              |
+| fmuchoice      | field  | ``forms.MultipleChoiceField()``                                   |
+| ftypedmuchoice | field  | ``forms.TypedMultipleChoiceField()``                              |
+| fmuval         | field  | ``forms.MultipleValueField()``                                    |
+| fnullbool      | field  | ``forms.NullBooleanField()``                                      |
+| fregex         | field  | ``forms.RegexField()``                                            |
+| fslug          | field  | ``forms.SlugField()``                                             |
+| fsdatetime     | field  | ``forms.SplitDateTime()``                                         |
+| ftime          | field  | ``forms.TimeField()``                                             |
+| ftchoice       | field  | ``forms.TypedChoiceField()``                                      |
+| ftmuchoice     | field  | ``forms.TypedMultipleChoiceField()``                              |
+| furl           | field  | ``forms.URLField()``                                              |
+| fuuid          | field  | ``forms.UUIDField()``                                             |
+| fsimplearray   | field  | ``SimpleArrayField() - PostgreSQL specific form field``           |
+| fsplitarray    | field  | ``SplitArrayField() - PostgreSQL specific form field``            |
+| fhstore        | field  | ``HStoreField() - PostgreSQL specific form field``                |
+| fjson          | field  | ``JSONField() - PostgreSQL specific form field``                  |
+| fintrange      | field  | ``IntegerRangeField() - PostgreSQL specific form field``          |
+| ffloatrange    | field  | ``FloatRangeField() - PostgreSQL specific form field``            |
+| fdatetimerange | field  | ``DateTimeRangeField() - PostgreSQL specific form field``         |
+| fdaterange     | field  | ``DateRangeField() - PostgreSQL specific form field``             |
+| ffi            | import | ``from .forms import <local_forms>``                         |
+| iforms         | import | ``from django import forms``                                      |
+| ipostgresff    | import | ``from django.contrib.postgres.forms import <PostgresSQL_forms>`` |
+| clean_data     | method | ``validate form data``                                            |
+
+### Snippets for Django Models
+
+|    Abbreviation    |  Type  |                         Code - Description                          |
+| ------------------ | ------ | ------------------------------------------------------------------- |
+| Model              | class  | ``Simple Model Class``                                              |
+| Model_full         | class  | ``Full Model Class(with TODOs)``                                    |
+| modelmixin         | class  | ``Simple Model Class Mixin with Meta abstract = True``              |
+| qs                 | class  | ``Custom QuerySet models.Queryset``                                 |
+| mngr               | class  | ``Custom Manager models.Manager``                                   |
+| qs_mngr            | class  | ``Custom initial QuerySet Manager returns``                         |
+| mauto              | field  | ``models.AutoField()``                                              |
+| mbigauto           | field  | ``models.BigAutoField()``                                           |
+| mbigint            | field  | ``models.BigIntegerField()``                                        |
+| mbinary            | field  | ``models.BinaryField()``                                            |
+| mbool              | field  | ``models.BooleanField()``                                           |
+| mchar              | field  | ``models.CharField()``                                              |
+| mcoseint           | field  | ``models.CommaSeparatedIntegerField() - deprecated since 1.9``      |
+| mdate              | field  | ``models.DateField()``                                              |
+| mdatetime          | field  | ``models.DateTimeField()``                                          |
+| mdecimal           | field  | ``models.DecimalField()``                                           |
+| mduration          | field  | ``models.DurationField()``                                          |
+| memail             | field  | ``models.EmailField()``                                             |
+| mfile              | field  | ``models.FileField()``                                              |
+| mfilepath          | field  | ``models.FilePathField()``                                          |
+| mfloat             | field  | ``models.FloatField()``                                             |
+| mimg               | field  | ``models.ImageField()``                                             |
+| mint               | field  | ``models.IntegerField()``                                           |
+| mgenericip         | field  | ``models.GenericIPAddressField()``                                  |
+| mip                | field  | ``models.IPAddressField() - deprecated since version 1.7``          |
+| mnullbool          | field  | ``models.NullBooleanField()``                                       |
+| mphone             | field  | ``models.PhoneNumberField()``                                       |
+| mposint            | field  | ``models.PositiveIntegerField()``                                   |
+| mpossmallint       | field  | ``models.PositiveSmallIntegerField()``                              |
+| mslug              | field  | ``models.SlugField()``                                              |
+| msmallint          | field  | ``models.SmallIntegerFiled()``                                      |
+| mtext              | field  | ``models.TextField()``                                              |
+| mtime              | field  | ``models.TimeField()``                                              |
+| murl               | field  | ``models.URLField()``                                               |
+| musstate           | field  | ``models.USStateField()``                                           |
+| muuid              | field  | ``models.UUIDField()``                                              |
+| mxml               | field  | ``models.XMLField() - deprecated since version 1.3``                |
+| fk                 | field  | ``models.ForeignKey()``                                             |
+| m2m                | field  | ``models.ManyToManyField()``                                        |
+| o2o                | field  | ``models.OneToOneField()``                                          |
+| mstore             | field  | ``HStoreField() - PostgreSQL specific model field``                 |
+| mjson              | field  | ``JSONField()- PostgreSQL specific model field``                    |
+| marray             | field  | ``ArrayField()- PostgreSQL specific model field``                   |
+| fmai               | import | ``from .managers import <local_managers>``                          |
+| fmi                | import | ``from .models import <local_models>``                              |
+| imodels            | import | ``from django.db import models``                                    |
+| iuc                | import | ``from django.utils.encoding import python_2_unicode_compatible``   |
+| ipostgresmf        | import | ``from django.contrib.postgres.fields import <PostgresSQL_models>`` |
+| isignals           | import | ``from django.db.models.signals import <signals>``                  |
+| str                | method | ``Unicode default python3``                                         |
+| get\_absolute\_url | method | ``Calculate the canonical URL for an object``                       |
+| receiver           | method | ``connect a receiver to a signal``                                  |
+
+
+### Snippets for Django Views
+
+|    Abbreviation    |  Type  |                        Code                         |
+| ------------------ | ------ | --------------------------------------------------- |
+| createview         | class  | ``Generic Create View``                             |
+| updateview         | class  | ``Generic Update View``                             |
+| deleteview         | class  | ``Generic Delete View``                             |
+| detailview         | class  | ``Generic Detail View``                             |
+| listview           | class  | ``Generic List View``                               |
+| templateview       | class  | ``Generic Template View``                           |
+| fvi                | import | ``from .views import <local_views>``                |
+| igenericviews      | import | ``from django.views.generic import <genericViews>`` |
+| isettings          | import | ``from django.conf import settings``                |
+| dispatch           | method | ``dispatch method for CBVs``                        |
+| get\_context\_data | method | ``get_context_data method for CBVs``                |
+| view               | method | ``Function Based View``                             |
+| get_queryset       | method | ``get_queryset method for CBVs``                    |
+
+
+### Snippets for Python
+
+| Abbreviation |  Type  |                Code - Description                 |
+| ------------ | ------ | ------------------------------------------------- |
+| \_\_init\_\_     | method | ``__init__(self, *args, **kwargs)``               |
+| pdb          | method | ``import pdb ; pdb.set_trace()``                  |
+| ipdb         | method | ``import ipdb ; ipdb.set_trace()``                |
+| npdb         | method | ``from nose.tools import set_trace; set_trace()`` |
+| traceback    | method | ``import traceback; traceback.print_exc();``      |
+| utfc         | method | ``coding: utf-8 ``                                |
+| iul          | import | ``from __future__ import unicode_literals``       |
+
 ### Snippets for Django templates
 
 | Abbreviation   | Tag                                                   |
@@ -53,114 +205,12 @@ If you'd like to contribute to this collection of snippets, feel free to [submit
 | staticu        |  ``{{ STATIC_URL }}``                                 |
 | media          |  ``{{ MEDIA_URL }}``                                  |
 
-### Snippets for Django model fields
+### 1.3.0
 
-| Abbreviation | Tag                                     |
-|--------------|-----------------------------------------|
-| mauto        | ``models.AutoField()``                  |
-| mbigauto     | ``models.BigAutoField()``               |
-| mbigint      | ``models.BigIntegerField()``            |
-| mbinary      | ``models.BinaryField()``                |
-| mbool        | ``models.BooleanField()``               |
-| mchar        | ``models.CharField()``                  |
-| mcoseint     | ``models.CommaSeparatedIntegerField()`` |
-| mdate        | ``models.DateField()``                  |
-| mdatetime    | ``models.DateTimeField()``              |
-| mdecimal     | ``models.DecimalField()``               |
-| mduration    | ``models.DurationField()``              |
-| memail       | ``models.EmailField()``                 |
-| mfile        | ``models.FileField()``                  |
-| mfilepath    | ``models.FilePathField()``              |
-| mfloat       | ``models.FloatField()``                 |
-| mimg         | ``models.ImageField()``                 |
-| mint         | ``models.IntegerField()``               |
-| mgenericip   | ``models.GenericIPAddressField()``      |
-| mip          | ``models.IPAddressField()``             |
-| mnullbool    | ``models.NullBooleanField()``           |
-| mphone       | ``models.PhoneNumberField()``           |
-| mposint      | ``models.PositiveIntegerField()``       |
-| mpossmallint | ``models.PositiveSmallIntegerField()``  |
-| mslug        | ``models.SlugField()``                  |
-| msmallint    | ``models.SmallIntegerFiled()``          |
-| mtext        | ``models.TextField()``                  |
-| mtime        | ``models.TimeField()``                  |
-| murl         | ``models.URLField()``                   |
-| musstate     | ``models.USStateField()``               |
-| muuid        | ``models.UUIDField()``                  |
-| mxml         | ``models.XMLField()``                   |
-| fk           | ``models.ForeignKey()``                 |
-| m2m          | ``models.ManyToManyField()``            |
-| o2o          | ``models.OneToOneField()``              |
+Update snippets for admin, forms, models, urls, views and python.
+Added Django version number when field was deprecated to the snippet description.
 
-### Snippets for Django form fields
-
-| Abbreviation   | Code                                 |
-|----------------|--------------------------------------|
-| fbool          | ``forms.BooleanField()``             |
-| fchar          | ``forms.CharField()``                |
-| fchoice        | ``forms.ChoiceField()``              |
-| fcombo         | ``forms.ComboField()``               |
-| fdate          | ``forms.DateField()``                |
-| fdatetime      | ``forms.DateTime()``                 |
-| fdecimal       | ``forms.DecimalField()``             |
-| fduration      | ``forms.DurationField()``            |
-| femail         | ``forms.EmailField()``               |
-| ffile          | ``forms.FileField()``                |
-| ffilepath      | ``forms.FilePathField()``            |
-| ffloat         | ``forms.FloatField()``               |
-| fimg           | ``forms.ImageField()``               |
-| fint           | ``forms.IntegerField()``             |
-| fip            | ``forms.IPAddressField()``           |
-| fgenericip     | ``forms.GenericIPAddressField()``    |
-| fmochoice      | ``forms.ModelChoiceField()``         |
-| fmomuchoice    | ``forms.ModelMultipleChoiceField()`` |
-| fmuchoice      | ``forms.MultipleChoiceField()``      |
-| ftypedmuchoice | ``forms.TypedMultipleChoiceField()`` |
-| fmuval         | ``forms.MultipleValueField()``       |
-| fnullbool      | ``forms.NullBooleanField()``         |
-| fregex         | ``forms.RegexField()``               |
-| fslug          | ``forms.SlugField()``                |
-| fsdatetime     | ``forms.SplitDateTime()``            |
-| ftime          | ``forms.TimeField()``                |
-| ftchoice       | ``forms.TypedChoiceField()``         |
-| ftmuchoice     | ``forms.TypedMultipleChoiceField()`` |
-| furl           | ``forms.URLField()``                 |
-| fuuid          | ``forms.UUIDField()``                |
-
-### Snippets for Django Views
-
-| Abbreviation     | Code                                 |
-|------------------|--------------------------------------|
-| view             | ``Function Based View``              |
-| createview       | ``Generic Create View``              |
-| updateview       | ``Generic Update View``              |
-| deleteview       | ``Generic Delete View``              |
-| detailview       | ``Generic Detail View``              |
-| listview         | ``Generic List View``                |
-| templateview     | ``Generic Template View``            |
-| adminview        | ``Generic Admin View``               |
-| tabularinline    | ``Tabular Inline View``              |
-| stackedinline    | ``Stacked Inline View``              |
-| dispatch         | ``dispatch method for CBVs``         |
-| get_context_data | ``get_context_data method for CBVs`` |
-
-### Snippets for Django Models
-
-| Abbreviation     | Code                                 |
-|------------------|--------------------------------------|
-| Model            | ``Simple Model Class``               |
-| Model_full       | ``Full Model Class(with TODOs)``     |
-
-### Snippets for Python
-
-| Abbreviation | Code                                              |
-|--------------|---------------------------------------------------|
-| __init__     | ``__init__(self, *args, **kwargs)``               |
-| pdb          | ``import pdb ; pdb.set_trace()``                  |
-| ipdb         | ``import ipdb ; ipdb.set_trace()``                |
-| npdb         | ``from nose.tools import set_trace; set_trace()`` |
-| traceback    | ``import traceback; traceback.print_exc();``      |
-| utfc         | ``coding: utf-8 ``                                |
+see details: [CHANGELOG.md](https://github.com/klavman/vscode-djaneiro/blob/master/CHANGELOG.md)
 
 
 ### 1.2.0
@@ -182,5 +232,4 @@ Initial port of Djaneiro for Visual Studio Code
 
 ##TODO: 
 
-- Add Django version number when field was deprecated to the snippet description. Some of these field types are no longer used.
-- Update view snippets
+- 
