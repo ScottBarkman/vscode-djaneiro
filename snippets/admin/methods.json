@@ -1,0 +1,14 @@
+{
+	"register": {
+		"prefix": "register",
+		"body": "admin.site.register($1)",
+		"description": "register the model class without providing a ModelAdmin description.",
+		"scope": "source.python"
+	},
+	"registermadmin": {
+		"prefix": "registermadmin",
+		"body": "admin.site.register($1, $1Admin)",
+		"description": "register the model class providing a ModelAdmin description",
+		"scope": "source.python"
+	}
+}
