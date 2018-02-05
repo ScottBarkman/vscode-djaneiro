@@ -1,14 +1,20 @@
 {
     "repk": {
 		"prefix": "repk",
-		"body": "r'^(?P<${1:pk}>\d+)/\$'",
+		"body": "r'^(?P<${1:pk}>\d+)/$'",
 		"description": "PK URL regex",
 		"scope": "source.python"
 	},
     "reslug": {
 		"prefix": "reslug",
-		"body": "r'^(?P<${1:slug}>[-\w]+)/\$'",
+		"body": "r'^(?P<${1:slug}>[-\w]+)/$'",
 		"description": "Slug URL regex",
 		"scope": "source.python"
-	}    
+	},
+	"reusername": {
+		"prefix": "reusername",
+		"body": "r'^(?P<username>[\w.@+-]+)/$'",
+		"description": "Username regex",
+		"scope": "source.python"
+	}   	  
 }

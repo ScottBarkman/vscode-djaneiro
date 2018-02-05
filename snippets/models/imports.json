@@ -17,10 +17,22 @@
         "description": "from ... import models",
         "scope": "source.python"
     },
-    "irmf": {
-        "prefix": "irmf",
-        "body": "from redactor.fields import RedactorField",
-        "description": "from redactor.fields import RedactorField",
+    "ipy2_unicode_compatible": {
+        "prefix": "iuc",
+        "body": "from django.utils.encoding import python_2_unicode_compatible",
+        "description": "For forwards compatibility, this decorator is available as of Django 1.4.2.",
+        "scope": "source.python"
+    },
+    "ipostgresmf": {
+        "prefix": "ipostgresmf",
+        "body": "from django.contrib.postgres.fields import ${1|ArrayField,JSONField,HStoreField|}",
+        "description": "PostgreSQL specific model fields",
+        "scope": "source.python"
+    },
+    "isignals": {
+        "prefix": "isignals",
+        "body": "from django.db.models.signals import ${1|pre_init,post_init,pre_save,post_save,pre_delete,post_delete,m2m_changed,class_prepared,Management signals,pre_migrate,post_migrate|}",
+        "description": "Signals for Django Model",
         "scope": "source.python"
     }
 }

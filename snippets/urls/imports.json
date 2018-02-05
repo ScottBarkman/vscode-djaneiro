@@ -1,14 +1,34 @@
 {
-    "ireverse": {
-		"prefix": "ireverse",
-		"body": "from django.core.urlresolvers import reverse${2:_lazy}$1",
-		"description": "from ... import reverse(_lazy)",
+    "urlresolvers": {
+		"prefix": "iurlresolvers",
+		"body": "from django.core.urlresolvers import ${1|reverse,reverse_lazy,resolve,get_script_prefix|}",
+		"description": "*Deprecated since version 1.10*\n\nUtility functions.\n\n",
 		"scope": "source.python"
 	},
-    "iurl": {
-		"prefix": "iurl",
-		"body": "from django.conf.urls import url${1:, include",
-		"description": "from ... import url, include",
+    "urls (≥1.10 & ≤1.11)": {
+		"prefix": "iurls",
+		"body": "from django.urls import ${1|reverse,reverse_lazy,resolve,get_script_prefix|}",
+		"description": "Utility functions for use in URLconfs.",
 		"scope": "source.python"
-	}    
+	},  
+	"conf.urls (≤1.11)": {
+		"prefix": "iconf_urls",
+		"body": "from django.conf.urls import ${1|static,url,include,handler400,handler403,handler404,handler500|}",
+		"description": "Utility functions for use in URLconfs.",
+		"scope": "source.python"
+	}, 			
+    "urls (≥2.0)": {
+		"prefix": "iurls",
+		"body": "from django.urls import ${1|path,re_path,include,reverse,reverse_lazy,register_converter|}",
+		"description": "Utility functions for use in URLconfs.",
+		"scope": "source.python"
+	},  
+	"conf.urls (≥2.0)": {
+		"prefix": "iconf_urls",
+		"body": "from django.conf.urls import ${1|static,url,handler400,handler403,handler404,handler500|}",
+		"description": "Utilityfunctions for use in URLconfs.",
+		"scope": "source.python"
+	}
+
 }
+
