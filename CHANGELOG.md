@@ -1,7 +1,7 @@
 # Change Log
 All notable changes to the "vscode-djaneiro" extension will be documented in this file.
 
-## [1.3.0]
+## [1.4.0]
 
 ### snippets/admin
 
@@ -127,6 +127,9 @@ All notable changes to the "vscode-djaneiro" extension will be documented in thi
 
 - Update package.json
 
+## [1.3.0]
+
+Added moar python and django template support (Thanks sebastian-code & supadrupa! )
 
 ## [1.2.0]
 
