@@ -205,13 +205,17 @@ If you'd like to contribute to this collection of snippets, feel free to [submit
 | staticu        |  ``{{ STATIC_URL }}``                                 |
 | media          |  ``{{ MEDIA_URL }}``                                  |
 
-### 1.3.0
+
+### 1.4.0
 
 Update snippets for admin, forms, models, urls, views and python.
 Added Django version number when field was deprecated to the snippet description.
 
 see details: [CHANGELOG.md](https://github.com/klavman/vscode-djaneiro/blob/master/CHANGELOG.md)
 
+### 1.3.0
+
+Added moar python and django template support
 
 ### 1.2.0
 
