@@ -28,5 +28,11 @@
 		"body": "# -*- coding: utf-8 -*-",
 		"description": "coding: utf-8",
 		"scope": "source.python"
-	}
+	},
+    "iunicode_literals": {
+        "prefix": "iul",
+        "body": "from __future__ import unicode_literals",
+        "description": "In order to enable the same behavior in Python 2, every module must import: \n",
+        "scope": "source.python"
+    }
 }

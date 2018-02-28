@@ -1,8 +1,0 @@
-{
-	"isettings": {
-		"prefix": "isettings",
-		"body": "from django.conf import settings",
-		"description": "from django.conf import settings",
-		"scope": "source.python"
-	}
-}

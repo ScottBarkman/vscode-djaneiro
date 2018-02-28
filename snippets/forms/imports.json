@@ -10,5 +10,11 @@
 		"body": "from django import forms",
 		"description": "from ... import forms",
 		"scope": "source.python"
+	},
+	"ipostgresff": {
+		"prefix": "ipostgresff",
+		"body": "from django.contrib.postgres.forms import ${1|SimpleArrayField,SplitArrayField,HStoreField,JSONField,IntegerRangeField,FloatRangeField,DateTimeRangeField,DateRangeField|}",
+		"description": "PostgreSQL specific forms fields",
+		"scope": "source.python"
 	}
 }
