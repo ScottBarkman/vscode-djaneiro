@@ -12,7 +12,7 @@ Add this to settings to get Emmet support for your Django Templates
 ```json
 "emmet.includeLanguages": {
   "django-html": "html"
-},
+}
 ```
 
 ## Features
