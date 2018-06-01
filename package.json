@@ -2,7 +2,7 @@
     "name": "vscode-djaneiro",
     "displayName": "Djaneiro - Django Snippets",
     "description": "A collection of snippets for django templates, models, views, fields & forms. Ported from Djaneiro for SublimeText",
-    "version": "1.4.0",
+    "version": "1.4.1",
     "publisher": "thebarkman",
     "icon": "images/djaneiro.png",
     "galleryBanner": {
@@ -33,7 +33,13 @@
                 ],
                 "extensions": [".html", ".htm"],
                 "configuration": "./django-html.configuration.json"
+			},
+			{
+                "id": "html",
+                "extensions": [".html", ".htm"]
             }
+        
+		
         ],
         "grammars": [
             {
@@ -118,6 +124,10 @@
 		{
 			"language": "python",
 			"path": "./snippets/templates/imports.json"
+		},
+		{
+			"language": "html",
+			"path": "./snippets/templates/html.json"
 		},
 		{
 			"language": "django-html",

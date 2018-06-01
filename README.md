@@ -206,6 +206,14 @@ If you'd like to contribute to this collection of snippets, feel free to [submit
 | media          |  ``{{ MEDIA_URL }}``                                  |
 
 
+### 1.4.2
+
+Undo force django-html lang to allow both standard html and django tags to autocomplete. Use django-html language to use django specific grammer.
+
+### 1.4.1
+
+Define new django-html lang instead of overriding html. Thanks ajitid!
+
 ### 1.4.0
 
 Update snippets for admin, forms, models, urls, views and python.
