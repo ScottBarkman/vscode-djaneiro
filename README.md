@@ -5,6 +5,16 @@ Initially ported to vscode from [Djaneiro for Sublime Text 2/3](https://github.c
 
 If you'd like to contribute to this collection of snippets, feel free to [submit a pull request on github](https://github.com/ScottBarkman/vscode-djaneiro)
 
+## After installation
+
+Add this to settings to get Emmet support for your Django Templates
+
+```json
+"emmet.includeLanguages": {
+  "django-html": "html"
+}
+```
+
 ## Features
 
 ### Snippets for Django Admin
