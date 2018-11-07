@@ -12,7 +12,7 @@
         "prefix": "get_absolute_url",
         "body": [
             "def get_absolute_url(self):",
-            "\tfrom django.core.urlresolvers import reverse",
+            "\tfrom django.urls import reverse",
             "\treturn reverse('$1', kwargs={'pk': self.pk})"
         ],
         "description": "",
