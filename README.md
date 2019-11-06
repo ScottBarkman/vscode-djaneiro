@@ -15,6 +15,14 @@ Add this to settings to get Emmet support for your Django Templates
 }
 ```
 
+Add this to settings to get syntax highlighter
+
+```json
+"files.associations": {
+  "**/templates/*.html": "django-html"
+}
+```
+
 To enable format feature add:
 
 ```json
