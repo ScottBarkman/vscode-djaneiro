@@ -15,6 +15,14 @@ Add this to settings to get Emmet support for your Django Templates
 }
 ```
 
+To enable format feature add:
+
+```json
+"[django-html]": {
+  "editor.defaultFormatter": "vscode.html-language-features",
+}
+```
+
 ## Features
 
 ### Snippets for Django Admin

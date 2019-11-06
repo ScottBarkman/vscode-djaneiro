@@ -1,5 +1,5 @@
 {
-    "name": "html",
+    "name": "django-html",
     "scopeName": "text.html.django",
     "comment": "Django Template Engine",
     "fileTypes": [
