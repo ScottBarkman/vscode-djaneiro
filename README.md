@@ -36,7 +36,7 @@ Add this to settings to get Emmet support for your Django Templates
 |  Abbreviation  |  Type  |                        Code - Description                         |
 | -------------- | ------ | ----------------------------------------------------------------- |
 | Form           | class  | ``Form(with TODOs)``                                              |
-| ModelForm      | class  | ``ModelFom``                                                      |
+| ModelForm      | class  | ``ModelForm``                                                     |
 | fbool          | field  | ``forms.BooleanField()``                                          |
 | fchar          | field  | ``forms.CharField()``                                             |
 | fchoice        | field  | ``forms.ChoiceField()``                                           |
@@ -75,7 +75,7 @@ Add this to settings to get Emmet support for your Django Templates
 | ffloatrange    | field  | ``FloatRangeField() - PostgreSQL specific form field``            |
 | fdatetimerange | field  | ``DateTimeRangeField() - PostgreSQL specific form field``         |
 | fdaterange     | field  | ``DateRangeField() - PostgreSQL specific form field``             |
-| ffi            | import | ``from .forms import <local_forms>``                         |
+| ffi            | import | ``from .forms import <local_forms>``                              |
 | iforms         | import | ``from django import forms``                                      |
 | ipostgresff    | import | ``from django.contrib.postgres.forms import <PostgresSQL_forms>`` |
 | clean_data     | method | ``validate form data``                                            |
@@ -161,7 +161,7 @@ Add this to settings to get Emmet support for your Django Templates
 
 | Abbreviation |  Type  |                Code - Description                 |
 | ------------ | ------ | ------------------------------------------------- |
-| \_\_init\_\_     | method | ``__init__(self, *args, **kwargs)``               |
+| \_\_init\_\_ | method | ``__init__(self, *args, **kwargs)``               |
 | pdb          | method | ``import pdb ; pdb.set_trace()``                  |
 | ipdb         | method | ``import ipdb ; ipdb.set_trace()``                |
 | npdb         | method | ``from nose.tools import set_trace; set_trace()`` |
@@ -207,13 +207,13 @@ Add this to settings to get Emmet support for your Django Templates
 | with           | ``{% with as %} {% endwith %}``                       |
 | trans          | ``{% trans %}``                                       |
 | blocktrans     | ``{% blocktrans with as %} {% endblocktrans %}``      |
-| super          |  ``{{ block.super }}``                                |
-| extrahead      |  ``{% block extrahead %} {% endblock extrahead %}``   |
-| extrastyle     |  ``{% block extrastyle %} {% endblock extrastyle %}`` |
-| var            |  ``{{ }}``                                            |
-| tag            |  ``{% %}``                                            |
-| staticu        |  ``{{ STATIC_URL }}``                                 |
-| media          |  ``{{ MEDIA_URL }}``                                  |
+| super          | ``{{ block.super }}``                                 |
+| extrahead      | ``{% block extrahead %} {% endblock extrahead %}``    |
+| extrastyle     | ``{% block extrastyle %} {% endblock extrastyle %}``  |
+| var            | ``{{ }}``                                             |
+| tag            | ``{% %}``                                             |
+| staticu        | ``{{ STATIC_URL }}``                                  |
+| media          | ``{{ MEDIA_URL }}``                                   |
 
 
 ### 1.4.2
@@ -229,7 +229,7 @@ Define new django-html lang instead of overriding html. Thanks ajitid!
 Update snippets for admin, forms, models, urls, views and python.
 Added Django version number when field was deprecated to the snippet description.
 
-see details: [CHANGELOG.md](https://github.com/klavman/vscode-djaneiro/blob/master/CHANGELOG.md)
+see details: [CHANGELOG.md](https://github.com/ScottBarkman/vscode-djaneiro/blob/master/CHANGELOG.md#140)
 
 ### 1.3.0
 
@@ -251,7 +251,3 @@ Updated logo
 
 Initial port of Djaneiro for Visual Studio Code
 
-
-##TODO: 
-
-- 
