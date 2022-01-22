@@ -11,10 +11,10 @@
 		"description": "block",
 		"scope": "text.html.django"
 	},
-	"blocktrans": {
-		"prefix": "blocktrans",
-		"body": "\r\n{% blocktrans %}\r\n\t${1:$SELECTION}\r\n{% endblocktrans %}\r\n",
-		"description": "blocktrans",
+	"blocktranslate": {
+		"prefix": "blocktranslate",
+		"body": "\r\n{% blocktranslate %}\r\n\t${1:$SELECTION}\r\n{% endblocktranslate %}\r\n",
+		"description": "blocktranslate",
 		"scope": "text.html.django"
 	},
 	"comment": {
@@ -233,10 +233,10 @@
 		"description": "templatetag",
 		"scope": "text.html.django"
 	},
-	"trans": {
-		"prefix": "trans",
-		"body": "{% trans '${1:$SELECTION}' %}",
-		"description": "trans",
+	"translate": {
+		"prefix": "translate",
+		"body": "{% translate '${1:$SELECTION}' %}",
+		"description": "translate",
 		"scope": "text.html.django"
 	},
 	"url": {
