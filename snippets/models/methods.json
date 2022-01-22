@@ -18,6 +18,16 @@
         "description": "",
         "scope": "source.python"
     },
+    "save": {
+        "prefix": "save",
+        "body": [
+            "def save(self, *args, **kwargs):",
+            "\t${1:do_something()}",
+            "\treturn super().save(*args, **kwargs)"
+        ],
+        "description": "Override models save() method",
+        "scope": "source.python"
+    },
     "receiver": {
         "prefix": "receiver",
         "body": [
@@ -31,5 +41,5 @@
 }
 
 
-    
+
 
