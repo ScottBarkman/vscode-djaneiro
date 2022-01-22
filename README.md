@@ -216,6 +216,10 @@ Add this to settings to get Emmet support for your Django Templates
 | media          |  ``{{ MEDIA_URL }}``                                  |
 
 
+### 1.4.4
+
+Added View Methods
+
 ### 1.4.3
 
 Updated Template tags, models and forms fields as per Django==4.0.0.
