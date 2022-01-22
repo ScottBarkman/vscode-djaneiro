@@ -211,8 +211,8 @@
 	},
 	"mjson": {
 		"prefix": "mjson",
-		"body": "${1:FIELDNAME} = JSONField()",
-		"description": "JSONField (mjson).\n\n*PostgreSQL specific model fields*.\n\n[New in Django 1.11.]\n\nA field for storing JSON encoded data.\n\n",
+		"body": "${1:FIELDNAME} = models.JSONField()",
+		"description": "models.JSONField (mjson).\n\n*JSONField is supported on MariaDB 10.2.7+, MySQL 5.7.8+, Oracle, PostgreSQL, and SQLite (with the JSON1 extension enabled).\n\nA field for storing JSON encoded data.\n\n",
 		"scope": "source.python"
 	},
 	"marray": {
@@ -220,5 +220,5 @@
 		"body": "${1:FIELDNAME} = ArrayField()",
 		"description": "ArrayField (marray).\n\n*PostgreSQL specific model fields*.\n\nA field for storing lists of data\n\n",
 		"scope": "source.python"
-	}		
+	}
 }
