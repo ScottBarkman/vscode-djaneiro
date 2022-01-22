@@ -31,7 +31,7 @@ Add this to settings to get Emmet support for your Django Templates
 | registermadmin   | method | ``admin.site.register(<Model>, <ModelAdmin>)`` |
 | fieldsets        | option | ``For more complex layout in ModelAdmin``      |
 
-### Snippets for Django Form 
+### Snippets for Django Form
 
 |  Abbreviation  |  Type  |                        Code - Description                         |
 | -------------- | ------ | ----------------------------------------------------------------- |
@@ -70,7 +70,7 @@ Add this to settings to get Emmet support for your Django Templates
 | fsimplearray   | field  | ``SimpleArrayField() - PostgreSQL specific form field``           |
 | fsplitarray    | field  | ``SplitArrayField() - PostgreSQL specific form field``            |
 | fhstore        | field  | ``HStoreField() - PostgreSQL specific form field``                |
-| fjson          | field  | ``JSONField() - PostgreSQL specific form field``                  |
+| fjson          | field  | ``forms.JSONField()``                  |
 | fintrange      | field  | ``IntegerRangeField() - PostgreSQL specific form field``          |
 | ffloatrange    | field  | ``FloatRangeField() - PostgreSQL specific form field``            |
 | fdatetimerange | field  | ``DateTimeRangeField() - PostgreSQL specific form field``         |
@@ -125,7 +125,7 @@ Add this to settings to get Emmet support for your Django Templates
 | m2m                | field  | ``models.ManyToManyField()``                                        |
 | o2o                | field  | ``models.OneToOneField()``                                          |
 | mstore             | field  | ``HStoreField() - PostgreSQL specific model field``                 |
-| mjson              | field  | ``JSONField()- PostgreSQL specific model field``                    |
+| mjson              | field  | ``models.JSONField()``                                              |
 | marray             | field  | ``ArrayField()- PostgreSQL specific model field``                   |
 | fmai               | import | ``from .managers import <local_managers>``                          |
 | fmi                | import | ``from .models import <local_models>``                              |
@@ -216,6 +216,10 @@ Add this to settings to get Emmet support for your Django Templates
 | media          |  ``{{ MEDIA_URL }}``                                  |
 
 
+### 1.4.3
+
+Updated Template tags, models and forms fields as per Django==4.0.0.
+
 ### 1.4.2
 
 Undo force django-html lang to allow both standard html and django tags to autocomplete. Use django-html language to use django specific grammer.
@@ -252,6 +256,6 @@ Updated logo
 Initial port of Djaneiro for Visual Studio Code
 
 
-##TODO: 
+##TODO:
 
-- 
+-
