@@ -135,6 +135,7 @@ Add this to settings to get Emmet support for your Django Templates
 | isignals           | import | ``from django.db.models.signals import <signals>``                  |
 | str                | method | ``Unicode default python3``                                         |
 | get\_absolute\_url | method | ``Calculate the canonical URL for an object``                       |
+| save               | method | ``model save() method``                                             |
 | receiver           | method | ``connect a receiver to a signal``                                  |
 
 
@@ -152,6 +153,8 @@ Add this to settings to get Emmet support for your Django Templates
 | igenericviews      | import | ``from django.views.generic import <genericViews>`` |
 | isettings          | import | ``from django.conf import settings``                |
 | dispatch           | method | ``dispatch method for CBVs``                        |
+| get                | method | ``get method for CBVs``                             |
+| post               | method | ``post method for CBVs``                            |
 | get\_context\_data | method | ``get_context_data method for CBVs``                |
 | view               | method | ``Function Based View``                             |
 | get_queryset       | method | ``get_queryset method for CBVs``                    |
