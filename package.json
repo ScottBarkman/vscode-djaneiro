@@ -2,7 +2,7 @@
 	"name": "django-vscode",
 	"displayName": "Django 4.x Snippets",
 	"description": "A collection of snippets for django templates, models, views, fields & forms. Ported from Djaneiro for SublimeText",
-	"version": "1.2",
+	"version": "1.0",
 	"publisher": "Mayank Singhal",
 	"icon": "images/djaneiro.png",
 	"galleryBanner": {
