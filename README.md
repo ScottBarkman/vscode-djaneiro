@@ -1,9 +1,5 @@
-# Django snippets for Visual Studio Code
-A collection of snippets for django templates, models, views, fields & forms. Quit typing so much, will ya?
-
-Initially ported to vscode from [Djaneiro for Sublime Text 2/3](https://github.com/squ1b3r/Djaneiro)
-
-If you'd like to contribute to this collection of snippets, feel free to [submit a pull request on github](https://github.com/ScottBarkman/vscode-djaneiro)
+# Django 4.x snippets for Visual Studio Code
+A collection of snippets for django templates, models, views, fields & forms.
 
 ## After installation
 
@@ -217,52 +213,3 @@ Add this to settings to get Emmet support for your Django Templates
 | tag            |  ``{% %}``                                            |
 | staticu        |  ``{{ STATIC_URL }}``                                 |
 | media          |  ``{{ MEDIA_URL }}``                                  |
-
-
-### 1.4.4
-
-Added View Methods
-
-### 1.4.3
-
-Updated Template tags, models and forms fields as per Django==4.0.0.
-
-### 1.4.2
-
-Undo force django-html lang to allow both standard html and django tags to autocomplete. Use django-html language to use django specific grammer.
-
-### 1.4.1
-
-Define new django-html lang instead of overriding html. Thanks ajitid!
-
-### 1.4.0
-
-Update snippets for admin, forms, models, urls, views and python.
-Added Django version number when field was deprecated to the snippet description.
-
-see details: [CHANGELOG.md](https://github.com/klavman/vscode-djaneiro/blob/master/CHANGELOG.md)
-
-### 1.3.0
-
-Added moar python and django template support
-
-### 1.2.0
-
-Change docstrings to class definitions for flake8 compatibility
-Updated model / form fields to utilize fields in Django 1.11
-Clean up repo from initial sublime port
-
-### 1.1.6
-
-Fix admin inline spacing
-Change from double quotes to single quotes in template tags
-Updated logo
-
-### 1.0.0
-
-Initial port of Djaneiro for Visual Studio Code
-
-
-##TODO:
-
--
