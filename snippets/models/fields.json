@@ -1,4 +1,40 @@
 {
+	"mverbose": {
+		"prefix": "mverbose",
+		"body": "verbose_name='$1'",
+		"description": "verbose option in model field",
+		"scope": "source.python"
+	},
+	"mblank": {
+		"prefix": "mblank",
+		"body": "blank=True",
+		"description": "Blank option in model field",
+		"scope": "source.python"
+	},
+	"mnull": {
+		"prefix": "mnull",
+		"body": "null=True",
+		"description": "Null option in model field",
+		"scope": "source.python"
+	},
+	"mblank-null": {
+		"prefix": "mblank-null",
+		"body": "blank=True, null=True",
+		"description": "Blank & Null option in model field",
+		"scope": "source.python"
+	},
+	"mhelp": {
+		"prefix": "mhelp",
+		"body": "help_text='$1'",
+		"description": "Help Text option in model field",
+		"scope": "source.python"
+	},
+	"meditable": {
+		"prefix": "meditable",
+		"body": "editable=False",
+		"description": "editable Text option in model field",
+		"scope": "source.python"
+	},
 	"mauto": {
 		"prefix": "mauto",
 		"body": "${1:FIELDNAME} = models.AutoField($2)",
