@@ -18,8 +18,8 @@
         "description": "",
         "scope": "source.python"
     },
-    "save": {
-        "prefix": "save",
+    "msave": {
+        "prefix": "msave",
         "body": [
             "def save(self, *args, **kwargs):",
             "\t${1:do_something()}",
@@ -28,12 +28,13 @@
         "description": "Override models save() method",
         "scope": "source.python"
     },
-    "receiver": {
-        "prefix": "receiver",
+    "msignal": {
+        "prefix": "msignal",
         "body": [
-            "def ${1:FUNCTIONNAME}_${2|pre_init,post_init,pre_save,post_save,pre_delete,post_delete,m2m_changed,class_prepared,Management signals,pre_migrate,post_migrate|}_receiver(sender, instance, *args, **kwargs):",
-            "\tpass",
-            "\n\n${2|pre_init,post_init,pre_save,post_save,pre_delete,post_delete,m2m_changed,class_prepared,Management signals,pre_migrate,post_migrate|}.connect(${1:name}_${2|pre_init,post_init,pre_save,post_save,pre_delete,post_delete,m2m_changed,class_prepared,Management signals,pre_migrate,post_migrate|}_receiver, sender=${3:MODELNAME})"
+            "@receiver(${1|pre_init,post_init,pre_save,post_save,pre_delete,post_delete,m2m_changed,class_prepared,Management signals,pre_migrate,post_migrate|}, model=$2)",
+            "def $1_$2(sender, instance, *args, **kwargs):",
+            "\t${3: #Todo}",
+            "\tpass"
         ],
         "description": "",
         "scope": "source.python"
