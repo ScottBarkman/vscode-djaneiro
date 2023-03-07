@@ -1,9 +1,5 @@
-# Django snippets for Visual Studio Code
-A collection of snippets for django templates, models, views, fields & forms. Quit typing so much, will ya?
-
-Initially ported to vscode from [Djaneiro for Sublime Text 2/3](https://github.com/squ1b3r/Djaneiro)
-
-If you'd like to contribute to this collection of snippets, feel free to [submit a pull request on github](https://github.com/ScottBarkman/vscode-djaneiro)
+# Django 4.x snippets for Visual Studio Code
+A collection of snippets for django templates, models, views, fields & forms.
 
 ## After installation
 
@@ -31,7 +27,7 @@ Add this to settings to get Emmet support for your Django Templates
 | registermadmin   | method | ``admin.site.register(<Model>, <ModelAdmin>)`` |
 | fieldsets        | option | ``For more complex layout in ModelAdmin``      |
 
-### Snippets for Django Form 
+### Snippets for Django Form
 
 |  Abbreviation  |  Type  |                        Code - Description                         |
 | -------------- | ------ | ----------------------------------------------------------------- |
@@ -70,7 +66,7 @@ Add this to settings to get Emmet support for your Django Templates
 | fsimplearray   | field  | ``SimpleArrayField() - PostgreSQL specific form field``           |
 | fsplitarray    | field  | ``SplitArrayField() - PostgreSQL specific form field``            |
 | fhstore        | field  | ``HStoreField() - PostgreSQL specific form field``                |
-| fjson          | field  | ``JSONField() - PostgreSQL specific form field``                  |
+| fjson          | field  | ``forms.JSONField()``                  |
 | fintrange      | field  | ``IntegerRangeField() - PostgreSQL specific form field``          |
 | ffloatrange    | field  | ``FloatRangeField() - PostgreSQL specific form field``            |
 | fdatetimerange | field  | ``DateTimeRangeField() - PostgreSQL specific form field``         |
@@ -125,7 +121,7 @@ Add this to settings to get Emmet support for your Django Templates
 | m2m                | field  | ``models.ManyToManyField()``                                        |
 | o2o                | field  | ``models.OneToOneField()``                                          |
 | mstore             | field  | ``HStoreField() - PostgreSQL specific model field``                 |
-| mjson              | field  | ``JSONField()- PostgreSQL specific model field``                    |
+| mjson              | field  | ``models.JSONField()``                                              |
 | marray             | field  | ``ArrayField()- PostgreSQL specific model field``                   |
 | fmai               | import | ``from .managers import <local_managers>``                          |
 | fmi                | import | ``from .models import <local_models>``                              |
@@ -135,6 +131,7 @@ Add this to settings to get Emmet support for your Django Templates
 | isignals           | import | ``from django.db.models.signals import <signals>``                  |
 | str                | method | ``Unicode default python3``                                         |
 | get\_absolute\_url | method | ``Calculate the canonical URL for an object``                       |
+| save               | method | ``model save() method``                                             |
 | receiver           | method | ``connect a receiver to a signal``                                  |
 
 
@@ -152,6 +149,8 @@ Add this to settings to get Emmet support for your Django Templates
 | igenericviews      | import | ``from django.views.generic import <genericViews>`` |
 | isettings          | import | ``from django.conf import settings``                |
 | dispatch           | method | ``dispatch method for CBVs``                        |
+| get                | method | ``get method for CBVs``                             |
+| post               | method | ``post method for CBVs``                            |
 | get\_context\_data | method | ``get_context_data method for CBVs``                |
 | view               | method | ``Function Based View``                             |
 | get_queryset       | method | ``get_queryset method for CBVs``                    |
@@ -214,44 +213,3 @@ Add this to settings to get Emmet support for your Django Templates
 | tag            |  ``{% %}``                                            |
 | staticu        |  ``{{ STATIC_URL }}``                                 |
 | media          |  ``{{ MEDIA_URL }}``                                  |
-
-
-### 1.4.2
-
-Undo force django-html lang to allow both standard html and django tags to autocomplete. Use django-html language to use django specific grammer.
-
-### 1.4.1
-
-Define new django-html lang instead of overriding html. Thanks ajitid!
-
-### 1.4.0
-
-Update snippets for admin, forms, models, urls, views and python.
-Added Django version number when field was deprecated to the snippet description.
-
-see details: [CHANGELOG.md](https://github.com/klavman/vscode-djaneiro/blob/master/CHANGELOG.md)
-
-### 1.3.0
-
-Added moar python and django template support
-
-### 1.2.0
-
-Change docstrings to class definitions for flake8 compatibility
-Updated model / form fields to utilize fields in Django 1.11
-Clean up repo from initial sublime port
-
-### 1.1.6
-
-Fix admin inline spacing
-Change from double quotes to single quotes in template tags
-Updated logo
-
-### 1.0.0
-
-Initial port of Djaneiro for Visual Studio Code
-
-
-##TODO: 
-
-- 

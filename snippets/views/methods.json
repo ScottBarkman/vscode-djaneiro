@@ -5,9 +5,21 @@
 		"description": "View",
 		"scope": "source.python"
 	},
+	"get": {
+		"prefix": "get",
+		"body": "\r\ndef get(self, request, *args, **kwargs):\r\n    return super().get(request, *args, **kwargs)\r\n",
+		"description": "",
+		"scope": "source.python"
+	},
+	"post": {
+		"prefix": "post",
+		"body": "\r\ndef post(self, request, *args, **kwargs):\r\n    return super().post(request, *args, **kwargs)\r\n",
+		"description": "",
+		"scope": "source.python"
+	},
 	"dispatch": {
 		"prefix": "dispatch",
-		"body": "\r\ndef dispatch(self, request, *args, **kwargs):\r\n    return super(${1:CLASS_NAME}, self).dispatch(request, *args, **kwargs)\r\n",
+		"body": "\r\ndef dispatch(self, request, *args, **kwargs):\r\n    return super().dispatch(request, *args, **kwargs)\r\n",
 		"description": "",
 		"scope": "source.python"
 	},

@@ -190,7 +190,7 @@
 		"body": "${1:FIELDNAME} = SplitArrayField()",
 		"description": "SplitArrayField (fsplitarray).\n\n*PostgreSQL specific form fields*.",
 		"scope": "source.python"
-	},	
+	},
 	"fhstore": {
 		"prefix": "fhstore",
 		"body": "${1:FIELDNAME} = HStoreField()",
@@ -199,8 +199,8 @@
 	},
 	"fjson": {
 		"prefix": "fjson",
-		"body": "${1:FIELDNAME} = JSONField()",
-		"description": "JSONField (fjson).\n\n*PostgreSQL specific form fields*.",
+		"body": "${1:FIELDNAME} = forms.JSONField()",
+		"description": "forms.JSONField (fjson).",
 		"scope": "source.python"
 	},
 	"fintrange": {
@@ -226,5 +226,5 @@
 		"body": "${1:FIELDNAME} = DateRangeField()",
 		"description": "DateRangeField (fdaterange).\n\n*PostgreSQL specific form fields*.",
 		"scope": "source.python"
-	}				
+	}
 }

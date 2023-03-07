@@ -11,10 +11,10 @@
 		"description": "block",
 		"scope": "text.html.django"
 	},
-	"blocktrans": {
-		"prefix": "blocktrans",
-		"body": "\r\n{% blocktrans %}\r\n\t${1:$SELECTION}\r\n{% endblocktrans %}\r\n",
-		"description": "blocktrans",
+	"blocktranslate": {
+		"prefix": "blocktranslate",
+		"body": "\r\n{% blocktranslate %}\r\n\t${1:$SELECTION}\r\n{% endblocktranslate %}\r\n",
+		"description": "blocktranslate",
 		"scope": "text.html.django"
 	},
 	"comment": {
@@ -97,13 +97,13 @@
 	},
 	"for": {
 		"prefix": "for",
-		"body": "\r\n{% for $1 in $2 %}\r\n\t${3:$SELECTION}\r\n{% endfor %}\r\n\t",
+		"body": "{% for $1 in $2 %}\r\n\t${3:$SELECTION}\r\n{% endfor %}\r\n",
 		"description": "for",
 		"scope": "text.html.django"
 	},
 	"fore": {
 		"prefix": "fore",
-		"body": "\r\n{% for $1 in $2 %}\r\n\t$3\r\n{% empty %}\r\n\t$4\r\n{% endfor %}\r\n\t",
+		"body": "{% for $1 in $2 %}\r\n\t$3\r\n{% empty %}\r\n\t$4\r\n{% endfor %}\r\n",
 		"description": "for... empty...",
 		"scope": "text.html.django"
 	},
@@ -115,43 +115,43 @@
 	},
 	"if": {
 		"prefix": "if",
-		"body": "\r\n{% if $1 %}\r\n\t${2:$SELECTION}\r\n{% endif %}\r\n\t",
+		"body": "{% if $1 %}\r\n\t${2:$SELECTION}\r\n{% endif %}\r\n",
 		"description": "if",
 		"scope": "text.html.django"
 	},
 	"ifchanged": {
 		"prefix": "ifchanged",
-		"body": "\r\n{% ifchanged $1 %}\r\n\t${2:$SELECTION}\r\n{% endifchanged %}\r\n\t",
+		"body": "{% ifchanged $1 %}\r\n\t${2:$SELECTION}\r\n{% endifchanged %}\r\n",
 		"description": "ifchanged",
 		"scope": "text.html.django"
 	},
 	"ife": {
 		"prefix": "ife",
-		"body": "\r\n{% if $1 %}\r\n\t$2\r\n{% else %}\r\n\t$3\r\n{% endif %}\r\n\t",
+		"body": "{% if $1 %}\r\n\t$2\r\n{% else %}\r\n\t$3\r\n{% endif %}\r\n",
 		"description": "if... else...",
 		"scope": "text.html.django"
 	},
 	"ifelse": {
 		"prefix": "ifelse",
-		"body": "\r\n{% if $1 %}\r\n\t$2\r\n{% else %}\r\n\t$3\r\n{% endif %}\r\n\t",
+		"body": "{% if $1 %}\r\n\t$2\r\n{% else %}\r\n\t$3\r\n{% endif %}\r\n",
 		"description": "if... else...",
 		"scope": "text.html.django"
 	},
 	"ifeq": {
 		"prefix": "ifeq",
-		"body": "\r\n{% ifequal $1 $2 %}\r\n\t${3:$SELECTION}\r\n{% endifequal %}\r\n\t",
+		"body": "{% ifequal $1 $2 %}\r\n\t${3:$SELECTION}\r\n{% endifequal %}\r\n",
 		"description": "ifequal (ifeq)",
 		"scope": "text.html.django"
 	},
 	"ifequal": {
 		"prefix": "ifequal",
-		"body": "\r\n{% ifequal $1 $2 %} \r\n\t${3:$SELECTION}\r\n{% endifequal %}\r\n\t",
+		"body": "{% ifequal $1 $2 %} \r\n\t${3:$SELECTION}\r\n{% endifequal %}\r\n",
 		"description": "ifequal",
 		"scope": "text.html.django"
 	},
 	"ifnotequal": {
 		"prefix": "ifnotequal",
-		"body": "\r\n{% ifnotequal $1 $2 %}\r\n\t${3:$SELECTION}\r\n{% endifnotequal %}\r\n\t",
+		"body": "{% ifnotequal $1 $2 %}\r\n\t${3:$SELECTION}\r\n{% endifnotequal %}\r\n",
 		"description": "ifnotequal",
 		"scope": "text.html.django"
 	},
@@ -233,10 +233,10 @@
 		"description": "templatetag",
 		"scope": "text.html.django"
 	},
-	"trans": {
-		"prefix": "trans",
-		"body": "{% trans '${1:$SELECTION}' %}",
-		"description": "trans",
+	"translate": {
+		"prefix": "translate",
+		"body": "{% translate '${1:$SELECTION}' %}",
+		"description": "translate",
 		"scope": "text.html.django"
 	},
 	"url": {
